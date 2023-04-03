@@ -1,0 +1,4488 @@
+14/03/2022, 11:11 - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.
+14/03/2022, 11:11 - Arpit: bhai
+14/03/2022, 11:12 - Arpit: ye dbms ka group nhi na bna hai abhi
+14/03/2022, 11:12 - Priyam Shankar Vit: ha bro
+14/03/2022, 11:12 - Arpit: okk
+14/03/2022, 11:12 - Priyam Shankar Vit: Nahi bana hai bhaí abhi
+14/03/2022, 11:13 - Arpit: haa
+16/03/2022, 10:14 - Priyam Shankar Vit: https://www.balajia.co.in/SBJ/dbmscs8481
+16/03/2022, 10:48 - Priyam Shankar Vit: CREATE TABLE first_table(stu_name varchar(20), roll number(10));
+19/03/2022, 15:20 - Priyam Shankar Vit: <Media omitted>
+22/03/2022, 09:54 - Arpit: <Media omitted>
+22/03/2022, 16:11 - Priyam Shankar Vit: This message was deleted
+22/03/2022, 16:13 - Priyam Shankar Vit: https://pulse.microsoft.com/en/skill-forward-en/na/fa1-get-rewarded-for-gaining-tech-skills-and-free-certifications-at-the-microsoft-spring-skills-challenge/
+28/03/2022, 18:55 - Priyam Shankar Vit: https://youtube.com/playlist?list=PLU6SqdYcYsfLRq3tu-g_hvkHDcorrtcBK
+30/03/2022, 23:32 - Arpit: https://youtu.be/ieHHGvuuT9I
+31/03/2022, 07:31 - Priyam Shankar Vit: Yed live
+31/03/2022, 07:32 - Priyam Shankar Vit: <Media omitted>
+31/03/2022, 07:34 - Priyam Shankar Vit: https://docs.google.com/document/d/1TJZSqJ_oLSIKHmZFBCDAB71y8JxdsyIOUOuXP7hTbac/edit?usp=sharing
+01/04/2022, 15:45 - Priyam Shankar Vit: <Media omitted>
+04/04/2022, 21:47 - Priyam Shankar Vit: https://docs.oracle.com/cd/B19306_01/server.102/b14225/ch4datetime.htm
+06/04/2022, 23:18 - Priyam Shankar Vit: Bhai kal ekbar exam ke baad calculator ka yaad dila dena
+07/04/2022, 17:40 - Priyam Shankar Vit: Mil gaya calculator
+07/04/2022, 18:03 - Arpit: Okk
+08/04/2022, 00:03 - Priyam Shankar Vit: <Media omitted>
+12/04/2022, 19:29 - Priyam Shankar Vit: <Media omitted>
+18/04/2022, 14:41 - Priyam Shankar Vit: package com.example.explicitintent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.content.Intent;
+import android.net.Uri;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button button;
+    private Button button2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        this.button = (Button)this.findViewById(R.id.button);
+        this.button2 = (Button)this.findViewById(R.id.button2);
+
+        this.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openURL();
+            }
+            public void openURL(){
+                String url = "https://vtop.vitbhopal.ac.in/vtop/initialProcess";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                this.startActivity(intent);
+            }
+
+            private void startActivity(Intent intent) {
+
+            }
+
+        });
+        this.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendEmail();
+            }
+
+            public void sendEmail(){
+                String[] recipients = new String[]{"swagatkumarsamantaray@vitbhopal.ac.in"};
+
+                String subject = "Harshil Rathod 20BCE10932";
+                String content = "Checking Code";
+
+                Intent intentEmail = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+                intentEmail.putExtra(Intent.EXTRA_EMAIL, recipients);
+                intentEmail.putExtra(Intent.EXTRA_SUBJECT, subject);
+                intentEmail.putExtra(Intent.EXTRA_TEXT, content);
+                intentEmail.setType("text/plain");
+
+                startActivity(Intent.createChooser(intentEmail, "Choose an email Client from..."));
+
+            }
+
+        });
+
+
+
+    }
+}
+19/04/2022, 11:47 - Priyam Shankar Vit: <Media omitted>
+19/04/2022, 14:24 - Priyam Shankar Vit: <Media omitted>
+19/04/2022, 14:24 - Priyam Shankar Vit: <Media omitted>
+19/04/2022, 21:32 - Priyam Shankar Vit: <Media omitted>
+20/04/2022, 16:19 - Priyam Shankar Vit: <Media omitted>
+20/04/2022, 16:24 - Arpit: 🤣🤣🤣
+21/04/2022, 13:55 - Arpit: Bhai
+21/04/2022, 13:55 - Arpit: Xml
+21/04/2022, 13:55 - Arpit: Code
+21/04/2022, 13:55 - Arpit: Bhejna
+21/04/2022, 13:55 - Arpit: !!
+21/04/2022, 13:55 - Arpit: Insert wala
+21/04/2022, 13:55 - Arpit: Jo kl banwaya tha last me
+21/04/2022, 13:57 - Priyam Shankar Vit: <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="146dp"
+        android:layout_height="65dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Rollno:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="301dp"
+        android:layout_height="51dp"
+        android:text="Student Details"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Marks:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="179dp"
+        android:layout_height="62dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name:"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="159dp"
+        android:layout_height="60dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="231dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+22/04/2022, 15:31 - Arpit: <Media omitted>
+22/04/2022, 15:31 - Arpit: <Media omitted>
+22/04/2022, 15:43 - Arpit: Bhai
+22/04/2022, 15:43 - Arpit: Bolde usse
+22/04/2022, 15:43 - Arpit: Kl lelenge
+22/04/2022, 15:43 - Arpit: Poster
+22/04/2022, 15:43 - Arpit: Bhai
+22/04/2022, 15:43 - Arpit: Bol do usko
+22/04/2022, 15:43 - Priyam Shankar Vit: Ok
+22/04/2022, 15:43 - Priyam Shankar Vit: 1 copy?
+22/04/2022, 15:43 - Priyam Shankar Vit: 2copy?
+22/04/2022, 15:43 - Arpit: 2 bhai
+22/04/2022, 15:43 - Priyam Shankar Vit: Ok
+22/04/2022, 15:45 - Priyam Shankar Vit: Boldiya bro
+22/04/2022, 15:53 - Arpit: Okk bhai
+25/04/2022, 14:22 - Arpit: Bhai
+25/04/2022, 14:22 - Arpit: Priyam apni context menu
+25/04/2022, 14:22 - Arpit: Jo calling menu wali file yhi
+25/04/2022, 14:22 - Arpit: Thi
+25/04/2022, 14:23 - Arpit: Wo bhej de zara
+25/04/2022, 14:23 - Priyam Shankar Vit: Bheju?
+25/04/2022, 14:23 - Priyam Shankar Vit: Ok
+25/04/2022, 14:23 - Arpit: Bhai
+25/04/2022, 14:23 - Arpit: Android studio wali file
+25/04/2022, 14:23 - Arpit: Bhejna
+25/04/2022, 14:23 - Arpit: Plss
+25/04/2022, 14:24 - Priyam Shankar Vit: package com.example.menuformail;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.widget.TextView;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    ListView listView;
+    String contacts[] = {"Priyam", "Nimlesh", "Jayant", "Suraj chiksi", "shanu bhai"};
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        listView = (ListView)findViewById(R.id.listView);
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,contacts);
+        listView.setAdapter(adapter);
+//        Register the listView for context menu
+        registerForContextMenu(listView);
+    }
+
+
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo)
+    {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        menu.setHeaderTitle("Select the Action");
+    }
+
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item)
+    {
+        if(item.getItemId()==R.id.call)
+        {
+            Toast.makeText(getApplicationContext(), "calling code", Toast.LENGTH_LONG).show();
+        }
+        else if (item.getItemId()==R.id.sms)
+        {
+            Toast.makeText(getApplicationContext(), "sending sms code", Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            return false;
+        }
+        return true;
+    }
+
+
+}
+25/04/2022, 14:25 - Priyam Shankar Vit: Ye java file hai
+25/04/2022, 14:25 - Priyam Shankar Vit: <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="341dp"
+        android:layout_height="351dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+25/04/2022, 14:25 - Priyam Shankar Vit: Ye xml file hai
+25/04/2022, 14:25 - Priyam Shankar Vit: <?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/call"
+        android:title="call him"/>
+    <item android:id="@+id/sms"
+        android:title="sms"/>
+</menu>
+25/04/2022, 14:25 - Priyam Shankar Vit: Ye menu. Xml file hai
+25/04/2022, 14:25 - Arpit: Bhai
+25/04/2022, 14:25 - Arpit: Kis naam se file banaya tha
+25/04/2022, 14:25 - Arpit: Wo bata de bss
+25/04/2022, 14:25 - Arpit: Dono file
+25/04/2022, 14:25 - Arpit: Menu wali bhi
+25/04/2022, 14:25 - Arpit: Aur
+25/04/2022, 14:25 - Priyam Shankar Vit: Menu wala tha menu.xml s3
+25/04/2022, 14:26 - Priyam Shankar Vit: Menu.xml
+25/04/2022, 14:26 - Priyam Shankar Vit: Baki sab default file name
+25/04/2022, 14:26 - Arpit: Main file
+25/04/2022, 14:26 - Arpit: Shuruwat me
+25/04/2022, 14:27 - Arpit: Empty project jo tha
+25/04/2022, 14:27 - Arpit: Wo kis naam se tha
+25/04/2022, 14:27 - Priyam Shankar Vit: Menuformail ke naamse tha
+25/04/2022, 14:28 - Priyam Shankar Vit: Isme bas line 1 me naam change karo apne file se
+25/04/2022, 14:28 - Arpit: Okk
+25/04/2022, 14:28 - Arpit: Jo wo
+25/04/2022, 14:28 - Arpit: Resource directory me naam likha jata hai
+25/04/2022, 14:28 - Priyam Shankar Vit: Haa
+25/04/2022, 14:28 - Arpit: Wha jo file bnti hai
+25/04/2022, 14:28 - Arpit: Uska naam
+25/04/2022, 14:28 - Arpit: Bta
+25/04/2022, 14:28 - Priyam Shankar Vit: Ha
+25/04/2022, 14:29 - Priyam Shankar Vit: menu.xml
+25/04/2022, 14:29 - Priyam Shankar Vit: Wo file banani aati hai tujhe? Ya batau?
+25/04/2022, 14:29 - Arpit: Aati hai bhai
+25/04/2022, 14:29 - Priyam Shankar Vit: Ok
+25/04/2022, 14:29 - Priyam Shankar Vit: Mera complete ho gaya hai koi bhi dikkat ho to bata
+25/04/2022, 21:23 - Priyam Shankar Vit: https://docs.google.com/forms/d/e/1FAIpQLSebrZAdxMA-p9wNOzXN6W1cpdBG55mkcHyhTfDDFsOZGPAf1Q/formResponse
+26/04/2022, 17:54 - Priyam Shankar Vit: Bhai hm library me hain, chinta mat karna
+26/04/2022, 18:46 - Arpit: Okk
+30/04/2022, 13:14 - Priyam Shankar Vit: 1. Login page:
+
+Java File:
+    package com.example.layoutclass1;
+
+    import androidx.appcompat.app.AppCompatActivity;
+
+    import android.os.Bundle;
+
+    public class MainActivity extends AppCompatActivity {
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+        }
+    }
+
+
+Xml File:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"S
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="login ID" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:tag=""
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+2.Layout Design
+Java File:
+package com.example.layoutdesign;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+Xml file:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="354dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="227dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+3. Button activity
+Java code:
+package com.example.eventtoast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        button=findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "button is clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
+Xml code:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+4. Activity Lifecycle:
+
+Java File:
+package com.example.lifecycleactivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);        }
+
+    protected void onStart(){
+            Toast.makeText(this,"Activity created",Toast.LENGTH_SHORT).show();
+
+        super.onStart();
+    }
+
+    protected void onResume(){
+        Toast.makeText(this,"Activity resumed",Toast.LENGTH_SHORT).show();
+
+        super.onResume();
+    }
+
+    protected void onPause(){
+        Toast.makeText(this,"Activity paused",Toast.LENGTH_SHORT).show();
+
+        super.onPause();
+    }
+    protected void onStop(){
+        Toast.makeText(this,"Activity stopped",Toast.LENGTH_SHORT).show();
+
+        super.onPause();
+    }
+    protected void onDestroy(){
+        Toast.makeText(this,"Activity destroyed",Toast.LENGTH_SHORT).show();
+
+        super.onDestroy();
+    }
+
+}
+
+XML File:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+5.Event Management:
+Java Code:
+package com.example.priyam;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view
+.View;
+import android.widget.Button;
+import android.widget.EditT
+ext;
+public class MainActivity extends
+AppCompatActivity {
+private Button intro;
+private EditT
+ext Name;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentV
+iew(R.layout.activity_main);
+intro = findV
+iewById(R.id.intro);
+Name =  findV
+iewById(R.id.Name);
+intro.setOnClickListener(new
+View.OnClickListener() {
+@Override
+public void onClick(V
+iew view) {
+String a = "I am Priyam Shankar";
+Name.setT
+ext(a);
+}
+});
+}
+}
+xml file:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<EditT
+ext
+android:id="@+id/Name"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:inputT
+ype="textPersonName"
+android:text=""
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintT
+op_toT
+opOf="parent"
+app:layout_constraintV
+ertical_bias="0.215" />
+<Button
+android:id="@+id/intro"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Intro"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.539"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintT
+op_toT
+opOf="parent"
+app:layout_constraintV
+ertical_bias="0.499" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+6 . Display info in dialogue box :
+
+Java file :
+
+package com.example.dialogBox;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatAc4vity;
+import android.content.DialogInterface; import android.os.Bundle;
+import android.view.View;
+import android.widget.Bu>on;
+import android.widget.DatePicker; import android.widget.EditText;
+public class MainAc4vity extends AppCompatAc4vity {
+EditText name, email, password; Bu>on submit, male, female; DatePicker dob;
+String gender = "";
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState); setContentView(R.layout.ac#vity_main);
+name = findViewById(R.id.name);
+email = findViewById(R.id.email); password = findViewById(R.id.password); submit = findViewById(R.id.submit); male = findViewById(R.id.male);
+female = findViewById(R.id.female); dob = findViewById(R.id.dob);
+male.setOnClickListener(new View.OnClickListener() { @Override
+public void onClick(View view) {
+gender = "Male"; }
+});
+female.setOnClickListener(new View.OnClickListener() { @Override
+public void onClick(View view) {
+gender = "Female"; }
+});
+submit.setOnClickListener(new View.OnClickListener() { @Override
+public void onClick(View v) {
+String mName = name.getText().toString(); String mEmail = email.getText().toString(); String pass = password.getText().toString(); int year = dob.getYear();
+int month = dob.getMonth();
+int day = dob.getDayOfMonth();
+String 4tle = "Login form";
+String msg = "Name : "+mName + "\n" + "Email : "+mEmail + "\n"+"Password : "+pass+ "\n"
++ "Gender : "+ gender + "\n"+ "DOB : " + day+"-" + month+ "-" + year;
+new AlertDialog.Builder(MainAc4vity.this) .setTitle(4tle)
+.setMessage(msg)
+.setPosi4veBu>on("Ok", new DialogInterface.OnClickListener() {
+@Override
+public void onClick(DialogInterface dialog, int which) {
+dialog.dismiss();
+}
+}).create().show();
+}
+});
+}
+}
+
+Xml File :
+
+<?xml version="1.0" encoding="um-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="h>p://schemas.android.com/
+apk/res/android"
+xmlns:app="h>p://schemas.android.com/apk/res-auto" xmlns:tools="h>p://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#DADADA" tools:context=".MainAc4vity">
+<EditText
+android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="textPersonName" android:text="Enter UserName" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.542" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.023" /><EditText
+android:id="@+id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="textPersonName" android:text="Enter Email address" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.542" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.11" />
+<EditText
+android:id="@+id/password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:ems="10" android:inputType="textPassword" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.542" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.212" />
+<Button 
+android:id="@+id/submit" android:layout_width="221dp" android:layout_height="43dp" android:text="submit" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.976" />
+<RadioBu>on
+android:id="@+id/male" android:layout_width="111dp" android:layout_height="47dp"
+android:text="Male" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.15" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.906" />
+<RadioBu>on
+android:id="@+id/female" android:layout_width="104dp" android:layout_height="49dp" android:text="Female" app:layout_constraintBo>om_toBo>omOf="parent"app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.833" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.906" />
+<DatePicker
+android:id="@+id/dob"
+android:layout_width="340dp" android:layout_height="257dp"
+android:endYear="2100"
+android:startYear="1900" app:layout_constraintBo>om_toBo>omOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.492" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVer4cal_bias="0.721"></DatePicker>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+7. Checkbox Activity
+Java Code:
+package com.example.classactivitycheckbox;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import android.os.Bundle;
+
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Button mButton1;
+        mButton1 = findViewById(R.id.checkBox2);
+        mButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(),"Your IT problem is registered",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button mButton2;
+        mButton2 = findViewById(R.id.checkBox3);
+        mButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(),"Your Logical problem is registered",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button mButton12;
+        mButton12 = findViewById(R.id.checkBox4);
+        mButton12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(),"Your theoritical problem is registered",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button mButton4;
+        mButton4 = findViewById(R.id.checkBox5);
+        mButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(),"Your analytical problem is registered",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        Button mButton15;
+        mButton15 = findViewById(R.id.checkBox6);
+        mButton15.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(),"Your Physical problem is registered",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+    }
+
+
+Xml code:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="491dp"
+        android:background="#7EFFA3"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your problem"
+            android:textColor="#B41313" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="IT problem"
+            android:textColor="#F7600089" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:text="logical problem"
+            android:textColor="#1BE405" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="Theoritical Problem"
+            android:textColor="#0011B8" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:text="analytical problem"
+            android:textColor="#FF0000" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="179dp"
+            android:layout_height="61dp"
+            android:text="Physical Problem"
+            android:textColor="#01592C" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+8. Simple Menu Design
+Java code:
+package com.example.menudesign;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.TextView;
+//import android.view
+
+public class MainActivity extends AppCompatActivity {
+    TextView tv;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        tv=findViewById(R.id.tv);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+//        super.onCreate();
+        MenuInflater m=getMenuInflater();
+        m.inflate(R.menu.menu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId())
+        {
+            case R.id.i1:
+                tv.setText ("CSE");
+                return true;
+            case R.id.i3:
+                tv.setText ("BioTech");
+                return true;
+            case R.id.i4:
+                tv.setText ("Mechanical");
+                return true;
+            case R.id.i5:
+                tv.setText ("gaming");
+                return true;
+            case R.id.i2:
+                tv.setText ("CSE");
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+Menu xml:
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/i1" android:title="Item" />
+    <item android:id="@+id/i2" android:title="Item" />
+    <item android:id="@+id/i3" android:title="Item" />
+    <item android:id="@+id/i4" android:title="Item" />
+    <item android:id="@+id/i5" android:title="Item" />
+
+</menu>
+Xml:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+9.Intent activity
+Java code:
+package com.example.in;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.content.Intent;
+import android.net.Uri;
+import android.view.View;
+import android.widget.Button;
+
+public class MainActivity extends AppCompatActivity {
+
+    private Button button;
+    private Button button2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        this.button = (Button)this.findViewById(R.id.button);
+        this.button2 = (Button)this.findViewById(R.id.button2);
+
+        this.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openURL();
+            }
+            public void openURL(){
+                String url = "https://vtop.vitbhopal.ac.in/vtop/initialProcess";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                this.startActivity(intent);
+            }
+
+            private void startActivity(Intent intent) {
+
+            }
+
+        });
+        this.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendEmail();
+            }
+
+            public void sendEmail(){
+                String[] recipients = new String[]{"swagatkumarsamantaray@vitbhopal.ac.in"};
+
+                String subject = "priyam shankar";
+                String content = "mail sent via Intent, sir attendance for 1st april!";
+
+                Intent intentEmail = new Intent(Intent.ACTION_SEND, Uri.parse("mailto:"));
+                intentEmail.putExtra(Intent.EXTRA_EMAIL, recipients);
+                intentEmail.putExtra(Intent.EXTRA_SUBJECT, subject);
+                intentEmail.putExtra(Intent.EXTRA_TEXT, content);
+                intentEmail.setType("text/plain");
+
+                startActivity(Intent.createChooser(intentEmail, "Choose an email Client from..."));
+
+            }
+
+        });
+
+
+
+    }
+}
+
+
+Xml file:
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="288dp"
+        android:text="SendMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="openUrl"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72"
+        tools:layout_editor_absoluteX="141dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+10.Context Menu
+Java code:
+package com.example.menuformail;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view
+.Menu;
+import android.view
+.MenuInflater;
+import android.widget.T
+extView;
+import android.view
+.ContextMenu;
+import android.view
+.MenuItem;
+import android.view
+.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListV
+iew;
+import android.widget.T
+oast;
+public class MainActivity extends
+AppCompatActivity {
+ListView listV
+iew;
+String contacts[] = {"Priyam", "Nimlesh", "Jayant", "Suraj chiksi", "shanu bhai"};
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+setContentV
+iew(R.layout.activity_main);
+listView = (ListV
+iew)findV
+iewById(R.id.listV
+iew);
+ArrayAdapter<String> adapter=new
+ArrayAdapter<String>(this,
+android.R.layout.simple_list_item_1,contacts);
+listView.setAdapter(adapter);
+//
+Register the listV
+iew for context menu
+registerForContextMenu(listV
+iew);
+}
+@Override
+public void onCreateContextMenu(ContextMenu menu,
+View v,
+ContextMenu.ContextMenuInfo menuInfo)
+{
+super.onCreateContextMenu(menu, v
+, menuInfo);
+MenuInflater inflater = getMenuInflater();
+inflater
+.inflate(R.menu.menu, menu);
+menu.setHeaderT
+itle("Select the
+Action");
+}
+@Override
+public boolean onContextItemSelected(MenuItem item)
+{
+if(item.getItemId()==R.id.call)
+{
+Toast.makeT
+ext(getApplicationContext(), "calling code",
+Toast.LENGTH_LONG).show();
+}
+else if (item.getItemId()==R.id.sms)
+{
+Toast.makeT
+ext(getApplicationContext(), "sending sms code",
+Toast.LENGTH_LONG).show();
+}
+else
+{
+return false;
+}
+return true;
+}
+xml file:
+Activity main xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<ListV
+iew
+android:id="@+id/listV
+iew"
+android:layout_width="341dp"
+android:layout_height="351dp"
+android:layout_mar
+ginStart="8dp"
+android:layout_mar
+ginTop="16dp"
+android:layout_mar
+ginEnd="8dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.296"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintT
+op_toT
+opOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+Menu.xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/call"
+android:title="call"/>
+<item android:id="@+id/sms"
+android:title="sms"/>
+</menu>
+
+
+11. Canvas Drawings :
+
+Java Code :
+
+package com.example.canvasactivity;
+import androidx.appcompat.app.AppCompatActivity;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.os.Bundle;
+import android.graphics.drawable.BitmapDrawable;import android.widget.ImageView;
+public class MainActivity extends AppCompatActivity {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState); setContentView(R.layout.activity_main);
+Bitmap bg = Bitmap.createBitmap(720,1280,Bitmap.Config.ARGB_8888); ImageView I = (ImageView)findViewById(R.id.image);
+I.setBackgroundDrawable(new BitmapDrawable(bg));
+// creating the canvas object
+Canvas canvas = new Canvas(bg);
+// creating the paint object and set its color and text size Paint paint = new Paint();
+paint.setColor(Color.RED);
+paint.setTextSize(50);
+// to draw a rectangle canvas.drawText("Rectangle",420,150,paint); canvas.drawRect(400,200,600,500,paint);
+paint.setColor(Color.MAGENTA);
+// to draw a circle canvas.drawText("circle", 120, 150, paint); canvas.drawCircle(200,350,150,paint);
+paint.setColor(Color.BLUE);
+// to draw a rectangle canvas.drawText("Square",120,800,paint); canvas.drawRect(50,850,350,1150,paint);
+paint.setColor(Color.CYAN);
+// to draw a line
+canvas.drawText("Line", 480, 800, paint); canvas.drawLine(520, 850,520,1150,paint);
+} }
+
+Xml File :
+
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+tools:context=".MainActivity">
+<ImageView
+android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>
+
+
+12 . Proximity sensor :
+
+Java File :
+
+package com.example.proximitysensoractivity;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
+//public class MainActivity extends AppCompatActivity {
+
+    private TextView textView;
+    private SensorManager sensorManager;
+    private Sensor ProximitySensor;
+    boolean isAvailable;
+    private Vibrator vibrator;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        textView = findViewById(R.id.value);
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        // Assign value to vibrator
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+
+        if (sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY) != null) {
+            ProximitySensor = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+            isAvailable=true;
+        }
+        else{
+            isAvailable=false;
+        }
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void onSensorChanged(SensorEvent sensorEvent){
+        textView.setText(sensorEvent.values[0]+"cm");
+        vibrator.vibrate(VibrationEffect.createOneShot(200,VibrationEffect.DEFAULT_AMPLITUDE));
+    }
+
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy){}
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        if(isAvailable){
+            sensorManager.registerListener((SensorEventListener) this, ProximitySensor,sensorManager.SENSOR_DELAY_NORMAL);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if(isAvailable){
+            sensorManager.unregisterListener(this);
+        }
+    }
+}
+
+
+XML File :
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="357dp"
+        android:layout_height="138dp"
+        android:text="Hello World!"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+13. Database Activity 1 :
+
+Java File :
+
+package com.example.databaseuse;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle; import android.app.Activity;
+import android.app.AlertDialog.Builder; import
+android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase; import
+android.view.View;
+import android.view.View.OnClickListener; import
+android.widget.Button;
+import android.widget.EditText;
+public class MainActivity extends AppCompatActivity {
+EditText Rollno,Name,Marks;
+Button Insert,Delete,Update,View,ViewAll; SQLiteDatabase
+db;
+@Override
+protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_main);
+Rollno=(EditText)findViewById(R.id.Rollno); Name=(EditText)findViewById(R.id.Name); Marks=(EditText)findViewById(R.id.Marks);
+Insert=(Button)findViewById(R.id.Insert); Delete=(Button)findViewById(R.id.Delete);
+Update=(Button)findViewById(R.id.Update); View=(Button)findViewById(R.id.View); ViewAll=(Button)findViewById(R.id.ViewAll); // apply on click listener
+Insert.setOnClickListener((OnClickListener) this);
+Delete.setOnClickListener((OnClickListener) this);
+Update.setOnClickListener((OnClickListener) this);
+View.setOnClickListener((OnClickListener) this);
+ViewAll.setOnClickListener((OnClickListener) this);
+// Creating database and table
+db=openOrCreateDatabase("StudentDB", Context.MODE_PRIVATE, null); db.execSQL("
+");
+}
+public void onClick(View view) {
+// Inserting a record to the Student table
+if(view==Insert) { // Checking for empty fields
+if(Rollno.getText().toString().trim().length()==0||
+Name.getText().toString(). trim().length()==0||
+Marks.getText().toString().trim().length()==0)
+VALUES('{
+showMessage ("Error", "Please enter all values");
+return;
+}
+//insert record
+db.execSQL("
+INSERT INTO student
+"+Rollno.getText()+"','"+Name.getText()+
+"','"+Marks.getText()+"');");
+showMessage("Success", "Record added");
+clearText(); }
+// Deleting a record from the Student table
+if(view==Delete)
+{
+// Checking for empty roll number
+if(Rollno.getText().toString().trim().length()==0) { showMessage("Error", "Please enter Rollno");
+return; }
+// Query for selection from table with a primary key
+Cursor c=db.rawQuery("
+SELECT * FROM student WHERE
+rollno='
+"+Rollno.getText()+"'", null); if(c.moveToFirst())
+{
+db.execSQL("DELETE FROM student WHERE
+rollno='"+Rollno.getText()+"'");
+showMessage("Success", "Record Deleted"); }
+else
+{
+showMessage("Error", "Invalid Rollno");
+}
+clearText(); }
+// Updating a record in the Student table
+if(view==Update) {
+// Checking for empty roll number
+if(Rollno.getText().toString().trim().length()==0) { showMessage("Error", "Please enter Rollno");
+return; }
+//Query for selection
+Cursor c=db.rawQuery("
+rollno='
+SELECT * FROM student WHERE
+"+Rollno.getText()+"'", null); if(c.moveToFirst())
+{
+//Update Query
+db.execSQL("UPDATE student SET name='" + Name.getText() + " " + Marks.getText() +
+',marks='
+' WHERE rollno='
+" "+Rollno.getText()+"'"); showMessage("Success", "Record Modified");
+}
+else
+{
+showMessage("Error", "Invalid Rollno"); }
+clearText(); }
+// Display a record from the Student table
+if(view==View) {
+// Checking for empty roll number
+if(Rollno.getText().toString().trim().length()==0) { showMessage("Error", "Please enter Rollno"); return; }
+//Query for selection
+Cursor c=db.rawQuery(" rollno='"+Rollno.getText()+"'",
+null);
+if(c.moveToFirst()) {
+SELECT * FROM student WHERE
+Name.setText(c.getString(1));
+Marks.setText(c.getString(2));
+}
+else
+{
+showMessage("Error", "Invalid Rollno"); clearText();
+}
+}
+// Displaying all the records
+if(view==ViewAll) {
+Cursor c=db.rawQuery("SELECT * FROM student", null);
+if(c.getCount()==0)
+{
+showMessage("Error", "No records found"); return;
+}
+StringBuffer buffer=new StringBuffer();
+while(c.moveToNext()) {
+buffer.append("Rollno: "+c.getString(0)+"\n");
+buffer.append("Name: "+c.getString(1)+"\n");
+buffer.append("Marks: "+c.getString(2)+"\n\n");
+}
+showMessage("Student Details", buffer.toString()); }
+}
+public void clearText() { Rollno.setText("");
+Name.setText(""); Marks.setText("");
+Rollno.requestFocus();
+}
+public void showMessage(String title, String message) {
+Builder builder=new Builder(this);
+builder.setCancelable(true); builder.setTitle(title);
+builder.setMessage(message); builder.show();
+}}
+
+Xml File :
+
+<?xml version="1.0" encoding="utf-8"?> <AbsoluteLayout xmlns:android="http:// schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".MainActivity">
+<TextView android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="50dp" android:layout_y="20dp"
+android:text="Student Details"
+<TextView android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="20dp" android:layout_y="110dp"
+android:text="Enter Rollno:" android:textSize="20sp" />
+<EditText
+android:id="@+id/Rollno" android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="175dp" android:layout_y="100dp"
+android:textSize="20sp" /> <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="20dp" android:layout_y="160dp"
+android:text="Enter Name:"
+android:textSize="20sp" /> <EditText
+android:id="@+id/Name" android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="175dp" android:layout_y="150dp"
+android:inputType="text" android:textSize="20sp" />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_x="20dp" android:layout_y="210dp"
+android:text="Enter Marks:" android:textSize="20sp" />
+<EditText
+android:id="@+id/Marks" android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="175dp"
+android:layout_y="200dp" android:inputType="number"
+android:textSize="20sp" />
+<Button
+android:id="@+id/Insert" android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="25dp"
+android:layout_y="300dp" android:text="Insert"
+android:textSize="30dp" />
+<Button android:id="@+id/Delete"
+android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="200dp" android:layout_y="300dp"
+android:text="Delete" android:textSize="30dp" />
+<Button
+android:id="@+id/Update" android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_x="25dp" android:layout_y="400dp"
+android:text="Update" android:textSize="30dp" />
+android:layout_width="150dp"
+android:layout_height="wrap_content"
+android:layout_y="400dp" android:text="View"
+android:textSize="30dp" />
+<Button
+android:id="@+id/ViewAll" android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:layout_x="100dp" android:layout_y="500dp"
+android:text="View All" android:textSize="30dp" />
+</AbsoluteLayout>
+
+14 . Database activity 2 :
+
+MAin Activity Java file :
+
+package com.example.databaseactivity2;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    EditText name, contact, dob;
+    Button insert, update, delete, view;
+    DBHelper DB;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        name = findViewById(R.id.name);
+        contact = findViewById(R.id.contact);
+        dob = findViewById(R.id.dob);
+        insert = findViewById(R.id.btnInsert);
+        update = findViewById(R.id.btnUpdate);
+        delete = findViewById(R.id.btnDelete);
+        view = findViewById(R.id.btnView);
+        DB = new DBHelper(this);
+        insert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nameTXT = name.getText().toString();
+                String contactTXT = contact.getText().toString();
+                String dobTXT = dob.getText().toString();
+                Boolean checkinsertdata = DB.insertuserdata(nameTXT, contactTXT, dobTXT);
+                if (checkinsertdata == true)
+                    Toast.makeText(MainActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
+            }
+        });
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nameTXT = name.getText().toString();
+                String contactTXT = contact.getText().toString();
+                String dobTXT = dob.getText().toString();
+                Boolean checkupdatedata = DB.updateuserdata(nameTXT, contactTXT, dobTXT);
+                if (checkupdatedata == true)
+                    Toast.makeText(MainActivity.this, "Entry Updated", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "New Entry Not Updated", Toast.LENGTH_SHORT).show();
+            }
+        });
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String nameTXT = name.getText().toString();
+                Boolean checkudeletedata = DB.deletedata(nameTXT);
+                if (checkudeletedata == true)
+                    Toast.makeText(MainActivity.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
+                else
+                    Toast.makeText(MainActivity.this, "Entry Not Deleted", Toast.LENGTH_SHORT).show();
+            }
+        });
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Cursor res = DB.getdata();
+                if (res.getCount() == 0) {
+                    Toast.makeText(MainActivity.this, "No Entry Exists", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                StringBuffer buffer = new StringBuffer();
+                while (res.moveToNext()) {
+                    buffer.append("Name :" + res.getString(0) + "\n");
+                    buffer.append("Contact :" + res.getString(1) + "\n");
+                    buffer.append("Date of Birth :" + res.getString(2) + "\n\n");
+                }
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setCancelable(true);
+                builder.setTitle("User Entries");
+                builder.setMessage(buffer.toString());
+                builder.show();
+            }
+        });
+    }
+}
+
+DBHelper java file :
+
+package com.example.databaseactivity2;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import androidx.annotation.Nullable;
+
+public class DBHelper extends SQLiteOpenHelper {
+    public DBHelper(Context context) {
+        super(context, "Userdata.db", null, 1);
+    }
+
+    @Override
+    public void onCreate(SQLiteDatabase DB) {
+        DB.execSQL("create Table Userdetails(name TEXT primary key, contact TEXT, dob TEXT)");
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase DB, int i, int i1) {
+        DB.execSQL("drop Table if exists Userdetails");
+    }
+
+    public Boolean insertuserdata(String name, String contact, String dob) {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("name", name);
+        contentValues.put("contact", contact);
+        contentValues.put("dob", dob);
+        long result = DB.insert("Userdetails", null, contentValues);
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public Boolean updateuserdata(String name, String contact, String dob) {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("contact", contact);
+        contentValues.put("dob", dob);
+        Cursor cursor = DB.rawQuery("Select * from Userdetails where name = ?", new String[] { name });
+        if (cursor.getCount() > 0) {
+            long result = DB.update("Userdetails", contentValues, "name=?",
+                    new String[] { name });
+            if (result == -1) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public Boolean deletedata(String name) {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("Select * from Userdetails where name = ?", new String[] { name });
+        if (cursor.getCount() > 0) {
+            long result = DB.delete("Userdetails", "name=?", new String[] { name });
+            if (result == -1) {
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public Cursor getdata() {
+        SQLiteDatabase DB = this.getWritableDatabase();
+        Cursor cursor = DB.rawQuery("Select * from Userdetails", null);
+        return cursor;
+    }
+}
+
+
+Activity main xml file :
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter the details below"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"/>
+
+    <EditText android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contact"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of Birth"
+        android:textSize="24dp"
+        android:layout_below="@+id/contact"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert New Data"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/dob"/>
+
+    <Button android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update Data"
+        android:layout_below="@id/btnInsert"/>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete Existing Data"
+        android:layout_below="@id/btnUpdate"/>
+
+    <Button android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View Data"
+        android:layout_below="@id/btnDelete"/>
+
+</RelativeLayout>
+30/04/2022, 13:24 - Priyam Shankar Vit: https://docs.google.com/document/d/15PUeTYwz8je-FMLZzwZqzdXlq7MUa63lyDmHlFYNiXM/edit
+02/05/2022, 19:09 - Priyam Shankar Vit: https://youtu.be/BYl80VK7A7E
+03/05/2022, 10:40 - Priyam Shankar Vit: https://www.youtube.com/watch?v=QL_hUu47_og
+04/05/2022, 22:49 - Priyam Shankar Vit: <Media omitted>
+04/05/2022, 22:50 - Arpit: 🤣🤣
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 11:20 - Arpit: <Media omitted>
+05/05/2022, 21:54 - Arpit: <Media omitted>
+05/05/2022, 21:56 - Priyam Shankar Vit: https://twitter.com/GitHubEducation/status/1521938722299781127?t=U63oAEAt3iuoCbZmEV58pg&s=19
+06/05/2022, 14:39 - Priyam Shankar Vit: Hmko late lagega gate laga lena
+06/05/2022, 17:49 - Arpit: Okk bhai
+08/05/2022, 23:42 - Priyam Shankar Vit: This message was deleted
+08/05/2022, 23:46 - Priyam Shankar Vit: https://youtu.be/DMTwN3N7U9k
+09/05/2022, 23:15 - Priyam Shankar Vit: <Media omitted>
+09/05/2022, 23:37 - Priyam Shankar Vit: Part A 60 marks
+Q2 mod 1 and 2
+Q3 mod3 design layout menu 
+Q4,5 intent ,database
+
+Code also for 8 marks
+Theory of 4 marks like what is intent and what class is used explain about the class.
+
+Whatever we have done only that will be coming
+
+If...
+12 marks for code
+10 marks for java
+2 marks for xml
+Endif....
+
+If....
+ xml code only
+Has 6 components
+2 marks each components
+Endif......
+
+See the midterm assigment question
+
+Not straight forward questions
+10/05/2022, 13:51 - Arpit: Portronics SILICO-C 60W PD Fast Charging Type C to Type C Cable with Data Sync & 1 Meter Cable Length(Blue) https://www.amazon.in/dp/B09Y8KX7SF/ref=cm_sw_r_apan_i_GBS7K55WD109DBSC079K
+10/05/2022, 14:29 - Priyam Shankar Vit: <Media omitted>
+16/05/2022, 13:11 - Priyam Shankar Vit: https://youtu.be/gfK4rzuEj-M
+16/05/2022, 13:11 - Priyam Shankar Vit: Vit ka official gana
+18/05/2022, 13:34 - Priyam Shankar Vit: sandeep mal sir vit.vcf (file attached)
+18/05/2022, 20:53 - Priyam Shankar Vit: Balaji A PC Sir.vcf (file attached)
+19/05/2022, 15:34 - Priyam Shankar Vit: <Media omitted>
+19/05/2022, 15:34 - Priyam Shankar Vit: <Media omitted>
+19/05/2022, 15:34 - Priyam Shankar Vit: <Media omitted>
+19/05/2022, 15:34 - Priyam Shankar Vit: <Media omitted>
+19/05/2022, 15:34 - Priyam Shankar Vit: <Media omitted>
+22/05/2022, 22:50 - Priyam Shankar Vit: http://jellynotes.herokuapp.com/
+25/05/2022, 08:14 - Priyam Shankar Vit: <Media omitted>
+29/05/2022, 10:04 - Priyam Shankar Vit: PANCHAYAT SHOOTING LOCATION
+https://maps.app.goo.gl/DQnoLzEShDcs5PhJ6
+02/06/2022, 22:09 - Arpit: https://drive.google.com/u/0/uc?id=1D-9d8GuqJEVxsKNM4unVl8tkZzrlMSG3&export=download
+10/06/2022, 06:44 - Priyam Shankar Vit: Pahuch gaye bhai rat me
+10/06/2022, 07:05 - Arpit: Bharia bhai
+10/06/2022, 07:05 - Arpit: Tera bhaut sa samaan to yhi
+10/06/2022, 07:05 - Arpit: Chut gya bhai
+10/06/2022, 14:53 - Priyam Shankar Vit: Are wo sb jan bujh ke chora
+10/06/2022, 14:53 - Priyam Shankar Vit: Kaam ke nahi hain
+10/06/2022, 15:27 - Arpit: Achha bhai
+15/06/2022, 15:54 - Arpit: Itni gndi dp kyu
+15/06/2022, 15:54 - Arpit: Lgadi bhai
+15/06/2022, 15:55 - Arpit: Pehli wali shi thi
+15/06/2022, 17:43 - Priyam Shankar Vit: U hi bhai sahi lag rha
+15/06/2022, 18:04 - Arpit: Achha
+15/06/2022, 18:04 - Arpit: 🤣🤣
+27/06/2022, 09:43 - Arpit: Bhai
+27/06/2022, 09:43 - Arpit: Tu phirse sath me
+27/06/2022, 09:43 - Arpit: Maths wale grp ke
+27/06/2022, 09:43 - Arpit: Me
+27/06/2022, 09:44 - Priyam Shankar Vit: Sirf maths me hi hai??
+27/06/2022, 09:44 - Arpit: Pta nhi
+27/06/2022, 09:44 - Arpit: Abhi to usme dekha maine
+27/06/2022, 09:44 - Priyam Shankar Vit: <Media omitted>
+27/06/2022, 09:44 - Priyam Shankar Vit: Tera bhej
+27/06/2022, 09:45 - Arpit: <Media omitted>
+27/06/2022, 09:45 - Priyam Shankar Vit: Mgt 1002 me bhi sath hain
+27/06/2022, 09:45 - Arpit: Haa bhai
+27/06/2022, 09:46 - Priyam Shankar Vit: Cse 3011 me bhi
+27/06/2022, 09:46 - Arpit: Tere grp wale bhi sath hai kya
+27/06/2022, 09:46 - Priyam Shankar Vit: 🤩🤩
+27/06/2022, 09:46 - Priyam Shankar Vit: Nahi nahi
+27/06/2022, 09:46 - Arpit: 😍😍
+27/06/2022, 09:46 - Priyam Shankar Vit: Akela hun
+27/06/2022, 09:46 - Arpit: Achha
+27/06/2022, 09:46 - Arpit: Koi nhi bhai
+27/06/2022, 09:46 - Arpit: Tera dusra grp to hai
+27/06/2022, 09:46 - Arpit: Hi
+27/06/2022, 09:46 - Arpit: Hmlog sb koi sath me hai
+27/06/2022, 09:46 - Priyam Shankar Vit: Ha bhai ekdm hai
+27/06/2022, 09:46 - Priyam Shankar Vit: Sahi hai
+27/06/2022, 09:47 - Priyam Shankar Vit: Maths me sahi aayi na teri?
+27/06/2022, 09:47 - Priyam Shankar Vit: Last sem
+27/06/2022, 09:47 - Arpit: Grade
+27/06/2022, 09:47 - Arpit: Haa bhai
+27/06/2022, 09:47 - Priyam Shankar Vit: Ha
+27/06/2022, 09:47 - Arpit: A diya hai
+27/06/2022, 09:47 - Arpit: 🤣🤣
+27/06/2022, 09:47 - Priyam Shankar Vit: Chalo bohot badhiya
+27/06/2022, 09:47 - Arpit: Dbms wala bckchodi kr dia
+27/06/2022, 09:47 - Arpit: Bhai
+27/06/2022, 09:47 - Arpit: B de diya
+27/06/2022, 09:47 - Priyam Shankar Vit: Me bc dar se nahi pucha
+27/06/2022, 09:47 - Priyam Shankar Vit: Koi ni
+27/06/2022, 09:47 - Priyam Shankar Vit: Mera anand motwani le liya
+27/06/2022, 09:47 - Arpit: Hm soche phir paper check krane dede
+27/06/2022, 09:48 - Priyam Shankar Vit: Mere group me sbko a diya hmko b dediya
+27/06/2022, 09:48 - Arpit: Kya kya grade rha
+27/06/2022, 09:48 - Arpit: ?
+27/06/2022, 09:48 - Priyam Shankar Vit: Babb
+27/06/2022, 09:48 - Arpit: Aree wo project wala
+27/06/2022, 09:48 - Priyam Shankar Vit: Ha
+27/06/2022, 09:48 - Arpit: Anand hmlog ko bhi
+27/06/2022, 09:48 - Arpit: B diya
+27/06/2022, 09:48 - Priyam Shankar Vit: Mad me c expect kr rhe the😂
+27/06/2022, 09:48 - Priyam Shankar Vit: Hai hi madarchod
+27/06/2022, 09:48 - Arpit: Haa bhai
+27/06/2022, 09:48 - Arpit: Swagat
+27/06/2022, 09:48 - Arpit: Bhi b diya
+27/06/2022, 09:49 - Priyam Shankar Vit: Ha mere isme kam the to hmko to b accha hi dediya
+27/06/2022, 09:49 - Arpit: To a kisme diya
+27/06/2022, 09:49 - Priyam Shankar Vit: Dbms me
+27/06/2022, 09:49 - Priyam Shankar Vit: Baki sbme B
+27/06/2022, 09:49 - Arpit: Aree bhai
+27/06/2022, 09:49 - Arpit: Hmse hi khunnas nikala hai mc
+27/06/2022, 09:50 - Priyam Shankar Vit: Tera kya hai grade?
+27/06/2022, 09:50 - Arpit: B diya usne
+27/06/2022, 09:50 - Arpit: Aabb rha
+27/06/2022, 09:50 - Arpit: Math me aur mobile me a mil gya
+27/06/2022, 09:50 - Arpit: Baki dono me b
+27/06/2022, 09:50 - Priyam Shankar Vit: Sahi hai fir to
+27/06/2022, 09:50 - Arpit: Haa bhai
+27/06/2022, 09:50 - Arpit: Aree bhai
+27/06/2022, 09:50 - Arpit: Ethics wala
+27/06/2022, 09:50 - Priyam Shankar Vit: Aur maths me bakiyon ke kaise rhe
+27/06/2022, 09:51 - Priyam Shankar Vit: Ha
+27/06/2022, 09:51 - Arpit: Kl register kr diye
+27/06/2022, 09:51 - Arpit: 10 course register hua hai mera
+27/06/2022, 09:51 - Priyam Shankar Vit: Are sahi hai
+27/06/2022, 09:51 - Arpit: Lekin dr lg rha hai
+27/06/2022, 09:51 - Arpit: Khi offline na ho
+27/06/2022, 09:51 - Arpit: Time table me to dikha rha hai
+27/06/2022, 09:51 - Priyam Shankar Vit: Nahi mail me likha hua hai ki 20 walo ka online hoga
+27/06/2022, 09:51 - Arpit: <Media omitted>
+27/06/2022, 09:51 - Arpit: Haa bhai
+27/06/2022, 09:51 - Arpit: Bss whi ho jaye
+27/06/2022, 09:52 - Priyam Shankar Vit: Ha
+27/06/2022, 09:52 - Arpit: Dre hue hai hm
+27/06/2022, 09:52 - Arpit: Iss baar clear ho jaye
+27/06/2022, 09:52 - Priyam Shankar Vit: Ho jayega dro mat
+27/06/2022, 09:52 - Arpit: Recover ho jayega
+27/06/2022, 09:52 - Arpit: Sb
+27/06/2022, 09:52 - Priyam Shankar Vit: Sab ho jayega
+27/06/2022, 09:52 - Arpit: Haa bhai
+27/06/2022, 09:52 - Arpit: Abhi class hai yeri
+27/06/2022, 09:52 - Arpit: Teri
+27/06/2022, 09:52 - Priyam Shankar Vit: Ha ho rhi
+27/06/2022, 09:52 - Priyam Shankar Vit: Bakiyon ka kya hua maths me
+27/06/2022, 09:52 - Arpit: Aree
+27/06/2022, 09:52 - Arpit: 3 jno ka
+27/06/2022, 09:52 - Arpit: Suppli hai
+27/06/2022, 09:53 - Priyam Shankar Vit: Idhar nilesh ka b lag gaya
+27/06/2022, 09:53 - Priyam Shankar Vit: Suppli
+27/06/2022, 09:53 - Arpit: Abhinav aniwesh aur akhil ka
+27/06/2022, 09:53 - Arpit: Achha
+27/06/2022, 09:53 - Priyam Shankar Vit: Are bc
+27/06/2022, 09:53 - Priyam Shankar Vit: Kumar abhishek nahi lenge
+27/06/2022, 09:53 - Priyam Shankar Vit: Chahe akhiri teacher ho to course drop kar denge
+27/06/2022, 09:53 - Priyam Shankar Vit: Lekin nahi lemge
+27/06/2022, 09:53 - Arpit: Kbhi nhi bhai
+27/06/2022, 09:54 - Arpit: Aryan itna mehnat kiya
+27/06/2022, 09:54 - Arpit: Usko
+27/06/2022, 09:54 - Arpit: B de diya
+27/06/2022, 09:54 - Arpit: 🤣🤣🤣🤣
+27/06/2022, 09:54 - Priyam Shankar Vit: Fir bhi theek hai
+27/06/2022, 09:54 - Arpit: Haa
+27/06/2022, 09:54 - Arpit: F bhauto ko dediya hai
+27/06/2022, 09:54 - Arpit: Sala
+27/06/2022, 09:54 - Priyam Shankar Vit: Koi ni kya kar skte
+27/06/2022, 09:55 - Arpit: Aree bhai
+27/06/2022, 09:55 - Arpit: Online hai
+27/06/2022, 09:55 - Arpit: Iss baar nikl hi jayega
+27/06/2022, 09:55 - Arpit: Ek cheez aur dekhe
+27/06/2022, 09:55 - Arpit: 4th year walo ka
+27/06/2022, 09:55 - Arpit: Internship ka course
+27/06/2022, 09:55 - Arpit: Hai
+27/06/2022, 09:55 - Priyam Shankar Vit: Haa tum bahut soch rhe ho jayega ethics hi to hai
+27/06/2022, 09:55 - Priyam Shankar Vit: Ha
+27/06/2022, 09:55 - Arpit: Bhai
+27/06/2022, 09:55 - Arpit: Internship ye clg wala krwayega
+27/06/2022, 09:55 - Arpit: Kyuki
+27/06/2022, 09:56 - Arpit: Register ka to paise lega hi
+27/06/2022, 09:56 - Arpit: 195 me se hi
+27/06/2022, 09:56 - Priyam Shankar Vit: Iska koi idea nahi hai hmko
+27/06/2022, 09:56 - Priyam Shankar Vit: Tum web dev start kiye?
+27/06/2022, 09:56 - Arpit: Haa
+27/06/2022, 09:56 - Arpit: Sb hi confuse hai bahi
+27/06/2022, 09:56 - Arpit: Abhi
+27/06/2022, 09:56 - Arpit: Abhi dsa pardh rhe hai
+27/06/2022, 09:56 - Arpit: Phorse
+27/06/2022, 09:56 - Arpit: Phirse
+27/06/2022, 09:56 - Arpit: 🤣🤣
+27/06/2022, 09:56 - Priyam Shankar Vit: Oo
+27/06/2022, 09:57 - Priyam Shankar Vit: Sahi hai prakashit karo notebook ko
+27/06/2022, 09:57 - Priyam Shankar Vit: 🤣😂
+27/06/2022, 09:57 - Arpit: Ab krna hi prega
+27/06/2022, 09:57 - Arpit: Bhaut din hogya chore hue
+27/06/2022, 09:57 - Priyam Shankar Vit: Pehle git karna fir webdev karna
+27/06/2022, 09:57 - Priyam Shankar Vit: Hn
+27/06/2022, 09:58 - Arpit: Haa bhai
+27/06/2022, 09:58 - Arpit: Abhi time denge uns bko
+27/06/2022, 12:53 - Priyam Shankar Vit: Bhai maths ke group me jagah ho to bolna
+27/06/2022, 12:53 - Priyam Shankar Vit: Na ho to bhi koi baat nahi
+27/06/2022, 12:54 - Arpit: Achha thk hai bhai
+27/06/2022, 12:54 - Arpit: Bata dunga mai
+27/06/2022, 12:54 - Priyam Shankar Vit: Okk
+27/06/2022, 13:00 - Arpit: Tere sath aur koi bhi hai priyam
+27/06/2022, 13:00 - Arpit: Jayant
+27/06/2022, 13:00 - Arpit: Nilesha wgera
+27/06/2022, 14:25 - Priyam Shankar Vit: Nahi iss wale me koi nahi hai
+27/06/2022, 14:37 - Arpit: Bhai
+27/06/2022, 14:37 - Arpit: Sorry
+27/06/2022, 14:37 - Arpit: Hmlog 7 jno ka hi gro bna liye hai total
+27/06/2022, 14:38 - Priyam Shankar Vit: Koi ni bro 😊
+01/07/2022, 11:57 - Priyam Shankar Vit: Bhai ye maths me kya ho rha
+01/07/2022, 11:57 - Priyam Shankar Vit: Teacher kaha hai
+01/07/2022, 12:05 - Arpit: Pta nhi
+01/07/2022, 12:05 - Arpit: Bhai
+10/07/2022, 14:46 - Priyam Shankar Vit: Bhai maths ka assignment bhej dena pls
+10/07/2022, 15:13 - Arpit: <Media omitted>
+10/07/2022, 15:13 - Arpit: Lo bhai
+10/07/2022, 15:13 - Priyam Shankar Vit: Thanks bhai
+10/07/2022, 15:13 - Arpit: Koi nhi bhai
+25/07/2022, 19:47 - Arpit: Bhai
+25/07/2022, 19:47 - Arpit: Pune wgera
+25/07/2022, 19:47 - Arpit: Ka kya scene
+25/07/2022, 19:47 - Arpit: Hai
+25/07/2022, 19:47 - Arpit: Jaa rhe ho
+25/07/2022, 19:47 - Arpit: Kya ?
+25/07/2022, 20:29 - Priyam Shankar Vit: Bhai dekho mail daale hain ki cancel kr de
+25/07/2022, 20:29 - Priyam Shankar Vit: Nahi to banglore chennai ka scene hai
+25/07/2022, 20:29 - Priyam Shankar Vit: Abhi tour programme set nahi kiye hain
+25/07/2022, 20:31 - Arpit: Haa whi na
+25/07/2022, 20:32 - Priyam Shankar Vit: Ab jo karenge 27 ke baad hi krenge
+25/07/2022, 20:35 - Arpit: Haa bhai
+25/07/2022, 20:36 - Arpit: Cancel kya mtlv
+25/07/2022, 20:37 - Priyam Shankar Vit: Mtlb ki mandatory na rhe sabko jaana
+25/07/2022, 20:38 - Arpit: Haa bhai
+25/07/2022, 20:57 - Arpit: <Media omitted>
+26/07/2022, 10:16 - Priyam Shankar Vit: Bhai tere end term me kumar abhishek ka question paper milega kya
+26/07/2022, 10:16 - Priyam Shankar Vit: Dekh na jara kisi se maang ke de na
+26/07/2022, 10:28 - Arpit: Haa dekhta hu bhai
+26/07/2022, 10:28 - Arpit: Kisi pe ho to
+26/07/2022, 10:45 - Priyam Shankar Vit: Hn bhai
+26/07/2022, 11:50 - Priyam Shankar Vit: Bhai mila kya question
+26/07/2022, 11:50 - Arpit: Nhi bhai
+26/07/2022, 11:50 - Priyam Shankar Vit: Oh
+26/07/2022, 11:51 - Priyam Shankar Vit: Koi ni
+26/07/2022, 11:51 - Arpit: Phir bhi mang rha hu bhai
+26/07/2022, 11:51 - Priyam Shankar Vit: Theek hai bhai thanks
+26/07/2022, 12:04 - Arpit: <Media omitted>
+26/07/2022, 12:04 - Arpit: Bhai
+26/07/2022, 12:04 - Arpit: Ye mid term wala mila hai
+26/07/2022, 12:04 - Priyam Shankar Vit: Ok bhai thankyou so much
+26/07/2022, 12:04 - Arpit: Aree koi
+26/07/2022, 12:04 - Arpit: Nhi bhai
+26/07/2022, 12:05 - Arpit: <Media omitted>
+26/07/2022, 12:05 - Arpit: Bhai ye
+26/07/2022, 12:05 - Arpit: Loo
+26/07/2022, 12:05 - Arpit: Tee bhi
+26/07/2022, 12:05 - Arpit: Mil gya
+26/07/2022, 12:05 - Priyam Shankar Vit: Kya baat hai bhai
+26/07/2022, 12:06 - Priyam Shankar Vit: Ekdm zeher
+26/07/2022, 12:06 - Arpit: In sb se question mil jaye
+26/07/2022, 12:06 - Arpit: To phir
+26/07/2022, 12:06 - Arpit: Kya hi baat hai
+26/07/2022, 12:06 - Priyam Shankar Vit: Maje hain
+26/07/2022, 14:28 - Arpit: Bhai
+26/07/2022, 14:28 - Arpit: Koi help chahiye
+26/07/2022, 14:28 - Priyam Shankar Vit: Ha bhai
+26/07/2022, 14:28 - Arpit: Question
+26/07/2022, 14:28 - Arpit: Bhejo
+26/07/2022, 14:29 - Priyam Shankar Vit: <Media omitted>
+26/07/2022, 14:29 - Priyam Shankar Vit: Sraa ho gaya hai 5th bacha hai
+26/07/2022, 14:29 - Arpit: Whi bna rge
+26/07/2022, 14:29 - Arpit: Rhe
+26/07/2022, 14:29 - Priyam Shankar Vit: Kya baat hai
+26/07/2022, 14:29 - Arpit: Hmlog bhi
+26/07/2022, 14:29 - Priyam Shankar Vit: Baki ho gaya na
+26/07/2022, 14:30 - Arpit: Bhejte hai
+26/07/2022, 14:30 - Arpit: Haa
+26/07/2022, 14:30 - Arpit: Bhai mera suppli nhi hai
+26/07/2022, 14:30 - Arpit: Hm dusre ka krwa rhe
+26/07/2022, 14:30 - Priyam Shankar Vit: Ha bro pata hai mujhe
+26/07/2022, 14:30 - Priyam Shankar Vit: Tujhe A aaya
+26/07/2022, 14:30 - Arpit: Bhai
+26/07/2022, 14:30 - Priyam Shankar Vit: Me bhi nilesh ka kara rha 😂
+26/07/2022, 14:30 - Arpit: Answer hota hai
+26/07/2022, 14:30 - Arpit: To bhejunga
+26/07/2022, 14:31 - Priyam Shankar Vit: Okk
+26/07/2022, 15:14 - Priyam Shankar Vit: Bhai 5th hua kya
+26/07/2022, 15:14 - Arpit: <Media omitted>
+26/07/2022, 15:14 - Arpit: Bhai bss ye mila hai
+26/07/2022, 15:14 - Arpit: Wo bhi pura shi nhi lg rha mujhe
+26/07/2022, 15:14 - Priyam Shankar Vit: Accha
+26/07/2022, 15:15 - Priyam Shankar Vit: Koi ni ye hi vhej dete
+26/07/2022, 15:19 - Arpit: Haa bhai
+26/07/2022, 15:20 - Priyam Shankar Vit: Thanks a lot bhai
+26/07/2022, 15:20 - Arpit: <Media omitted>
+26/07/2022, 15:20 - Arpit: Ye wala jyada
+26/07/2022, 15:20 - Arpit: Thk lg rha hai bhai
+26/07/2022, 15:20 - Arpit: Ye bhejp
+26/07/2022, 15:20 - Priyam Shankar Vit: Okk
+27/07/2022, 12:53 - Priyam Shankar Vit: Kya karna hai bhai
+27/07/2022, 12:54 - Priyam Shankar Vit: Tutorial me
+27/07/2022, 12:56 - Arpit: Notes
+27/07/2022, 12:56 - Arpit: Jitne bhi banaye ho
+27/07/2022, 12:56 - Arpit: Wo submit krna hai
+27/07/2022, 12:56 - Priyam Shankar Vit: 🥲🥲🥲
+27/07/2022, 13:10 - Priyam Shankar Vit: Last class me bole the sir?
+27/07/2022, 13:10 - Arpit: Nhi
+27/07/2022, 13:11 - Arpit: Aaj ka bss
+27/07/2022, 13:11 - Priyam Shankar Vit: Ooo
+17/08/2022, 12:41 - Arpit: Maths ka exam tera bhi hai na bhai
+17/08/2022, 12:41 - Arpit: Aaj
+17/08/2022, 12:41 - Arpit: Mere sath
+17/08/2022, 12:41 - Arpit: Suresh dara
+17/08/2022, 12:41 - Arpit: Wale me
+17/08/2022, 12:41 - Priyam Shankar Vit: Haa bhai
+17/08/2022, 12:41 - Priyam Shankar Vit: Sath hi hun
+17/08/2022, 12:41 - Arpit: Aur kon kon hai
+17/08/2022, 12:41 - Priyam Shankar Vit: Bacha lena
+17/08/2022, 12:41 - Priyam Shankar Vit: Bas me hi hun
+17/08/2022, 12:41 - Arpit: Support jyada rkhna prega
+17/08/2022, 12:41 - Arpit: Chlo koi nhi darking
+17/08/2022, 12:41 - Arpit: Darling
+17/08/2022, 12:41 - Arpit: Pune jaa rhe ho ki bhi
+17/08/2022, 12:41 - Arpit: Nhi?
+17/08/2022, 12:41 - Priyam Shankar Vit: Nahi hm to banglore chennai
+17/08/2022, 12:42 - Arpit: Achha
+17/08/2022, 12:42 - Priyam Shankar Vit: Pune lamba par jata
+17/08/2022, 12:42 - Arpit: Banglore me phir milna bhai
+17/08/2022, 12:42 - Priyam Shankar Vit: Haa bhai bilkul
+17/08/2022, 12:42 - Arpit: ❣️❣️
+17/08/2022, 13:08 - Arpit: Bhai
+17/08/2022, 13:08 - Arpit: Wo suresh dara
+17/08/2022, 13:08 - Arpit: Ka kchh practice questions hai terr paas
+17/08/2022, 13:08 - Arpit: Jo class me krwaya tha
+17/08/2022, 13:08 - Arpit: Ya kbhi assignment me diya ho
+17/08/2022, 13:09 - Arpit: Usse 20 marka ka ana hi ana hai
+17/08/2022, 13:20 - Priyam Shankar Vit: Dekhte hain send karte hain
+17/08/2022, 13:23 - Arpit: Haa bhai
+17/08/2022, 13:23 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 13:23 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 13:23 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 13:25 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 13:28 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 13:28 - Priyam Shankar Vit: bhai solution to kisi ka nahi hai
+17/08/2022, 13:34 - Priyam Shankar Vit: Sara upsc ka question hai, most probably exam me bhi usi se dede shayad
+17/08/2022, 14:33 - Arpit: bhai kchh mila
+17/08/2022, 14:33 - Arpit: answer
+17/08/2022, 14:34 - Arpit: <Media omitted>
+17/08/2022, 14:34 - Arpit: 4th
+17/08/2022, 14:34 - Priyam Shankar Vit: chegg p mila pehla
+17/08/2022, 14:34 - Arpit: ss bhejo
+17/08/2022, 14:34 - Priyam Shankar Vit: are subscription nhi hai
+17/08/2022, 14:34 - Arpit: achha
+17/08/2022, 14:34 - Arpit: hm try krte hai khi se
+17/08/2022, 14:35 - Priyam Shankar Vit: suraj bhej rha h
+17/08/2022, 14:35 - Priyam Shankar Vit: 1st
+17/08/2022, 14:36 - Arpit: okk bhai
+17/08/2022, 14:41 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 14:52 - Priyam Shankar Vit: https://www.assignmentexpert.com/homework-answers/mathematics/discrete-mathematics/question-117156
+17/08/2022, 14:52 - Priyam Shankar Vit: 2 a
+17/08/2022, 14:52 - Priyam Shankar Vit: The minimal element is 1 (not preceeded by another element).
+
+The maximal elements are 8 and 12 (not succeeded by another element).
+
+The greatest element does not exist since there is no any one element that succeeds all other elements.
+17/08/2022, 14:52 - Priyam Shankar Vit: 2b ka answer
+17/08/2022, 14:59 - Arpit: Okk
+17/08/2022, 15:02 - Arpit: bhai 3 bhejo
+17/08/2022, 15:02 - Priyam Shankar Vit: <Media omitted>
+17/08/2022, 15:24 - Arpit: Bhai
+17/08/2022, 15:24 - Arpit: 5
+17/08/2022, 15:24 - Priyam Shankar Vit: nhi kiya h 5
+17/08/2022, 15:24 - Arpit: Mil bhi nhi
+17/08/2022, 15:25 - Priyam Shankar Vit: nhi bhai
+17/08/2022, 15:29 - Priyam Shankar Vit: 1ka mila koi aur
+17/08/2022, 15:29 - Arpit: mangte hai
+17/08/2022, 15:29 - Arpit: wo galat hai kya ?
+17/08/2022, 15:30 - Priyam Shankar Vit: nhi lkin smjh nhi a rha likhe kaise
+17/08/2022, 15:30 - Arpit: achha
+17/08/2022, 15:32 - Arpit: bhai sb whi tmhara
+17/08/2022, 15:32 - Arpit: \wala likh diya hai
+17/08/2022, 15:33 - Priyam Shankar Vit: ok
+17/08/2022, 15:33 - Priyam Shankar Vit: wo b glt nhi h'
+17/08/2022, 15:33 - Arpit: Haa
+17/08/2022, 15:48 - Priyam Shankar Vit: shayad 5th ka a ban hi nahi payega kyo ki degree of a vertex 0 de rakha hai toh uske wajah se usse hum log eliminate kar sakhte hai
+17/08/2022, 15:49 - Priyam Shankar Vit: https://www.quora.com/Can-a-connected-Eulerian-graph-have-an-even-number-of-vertices-and-an-odd-number-of-edges-If-so-draw-an-example-If-not-prove-it
+17/08/2022, 15:49 - Priyam Shankar Vit: 5b ke siimilar h
+17/08/2022, 15:51 - Arpit: Achha
+17/08/2022, 16:25 - Priyam Shankar Vit: 2ka B aur 5 chor ke baki to sahi hi tha bhai
+22/08/2022, 12:08 - Arpit: bhai
+22/08/2022, 12:09 - Arpit: 2nd
+22/08/2022, 12:09 - Priyam Shankar Vit: do mint
+22/08/2022, 12:09 - Arpit: okk
+22/08/2022, 12:12 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:15 - Arpit: bs itna hi hai bhai
+22/08/2022, 12:15 - Priyam Shankar Vit: hn bhai
+22/08/2022, 12:15 - Priyam Shankar Vit: binary  to decimal m convert krdo bs
+22/08/2022, 12:15 - Arpit: haa bhai
+22/08/2022, 12:16 - Arpit: 3rd bhej na bhai
+22/08/2022, 12:16 - Priyam Shankar Vit: ok
+22/08/2022, 12:17 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:17 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:26 - Arpit: priyam 5th
+22/08/2022, 12:26 - Arpit: bhai
+22/08/2022, 12:26 - Priyam Shankar Vit: abhi nhi kiya h bhai
+22/08/2022, 12:27 - Arpit: okk
+22/08/2022, 12:35 - Arpit: Bhai
+22/08/2022, 12:35 - Arpit: 5th ho to bhejna
+22/08/2022, 12:35 - Priyam Shankar Vit: kr rhanhai
+22/08/2022, 12:35 - Arpit: Haa bhai
+22/08/2022, 12:37 - Arpit: bhai 2nd me last me kchh krna hai ?
+22/08/2022, 12:37 - Arpit: ya whi chor de
+22/08/2022, 12:37 - Arpit: jo tm bheje
+22/08/2022, 12:37 - Priyam Shankar Vit: .
+22/08/2022, 12:37 - Arpit: Photo bhej do
+22/08/2022, 12:37 - Arpit: Na
+22/08/2022, 12:37 - Arpit: Ek baar
+22/08/2022, 12:37 - Arpit: Uska
+22/08/2022, 12:37 - Priyam Shankar Vit: hm nhi kiye hn bhai abhi
+22/08/2022, 12:37 - Arpit: Acha kii
+22/08/2022, 12:38 - Arpit: Koi nhi bhai
+22/08/2022, 12:38 - Arpit: Tm 5th kro
+22/08/2022, 12:38 - Priyam Shankar Vit: online convertot dekho n
+22/08/2022, 12:41 - Arpit: bhai jitna hua
+22/08/2022, 12:41 - Arpit: utna bhej do
+22/08/2022, 12:41 - Arpit: lmba hoga ye
+22/08/2022, 12:41 - Arpit: pkka
+22/08/2022, 12:42 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:46 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:48 - Arpit: Bss itna
+22/08/2022, 12:48 - Arpit: Hi hai bhai
+22/08/2022, 12:48 - Arpit: Ya aur hai
+22/08/2022, 12:48 - Arpit: ?
+22/08/2022, 12:48 - Priyam Shankar Vit: itna hi h
+22/08/2022, 12:48 - Arpit: Okk
+22/08/2022, 12:48 - Arpit: Ek baar 2nd dekh lena
+22/08/2022, 12:48 - Arpit: Thoda dikkt aa rha hai usne
+22/08/2022, 12:54 - Arpit: bhai ye 5th pura shi hai na
+22/08/2022, 12:54 - Arpit: ?
+22/08/2022, 12:55 - Priyam Shankar Vit: hn bhai
+22/08/2022, 12:56 - Arpit: 2nd dekh bhai
+22/08/2022, 12:56 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 12:57 - Priyam Shankar Vit: ar kuch h bhai
+22/08/2022, 12:57 - Priyam Shankar Vit: mera ho gya h
+22/08/2022, 13:05 - Arpit: Thnx a lot bhai
+22/08/2022, 13:05 - Arpit: Aaj bhaut madad kr diye tm bhai
+22/08/2022, 13:05 - Arpit: Wrna latak hi jate aaj to
+22/08/2022, 13:06 - Priyam Shankar Vit: Kar diye paraya
+22/08/2022, 13:06 - Arpit: Aree nhi bhai
+22/08/2022, 13:06 - Arpit: 😅😅
+22/08/2022, 13:06 - Priyam Shankar Vit: Answer ka adan pradan bane rahna chahiye😂🫡
+22/08/2022, 13:06 - Arpit: Haa bhai
+22/08/2022, 13:06 - Arpit: Bhai
+22/08/2022, 13:06 - Arpit: Chitrakshi ka naam to lgbhag
+22/08/2022, 13:06 - Arpit: Hr
+22/08/2022, 13:07 - Arpit: Company ke exam me hai
+22/08/2022, 13:07 - Arpit: Hm dekhe
+22/08/2022, 13:07 - Arpit: List
+22/08/2022, 13:07 - Arpit: Hr kisi me shortlisted hai wo
+22/08/2022, 13:07 - Priyam Shankar Vit: Haa bhai microsoft mentee thi na
+22/08/2022, 13:07 - Arpit: Haa
+22/08/2022, 13:07 - Arpit: Bhai ka aya ki nhi
+22/08/2022, 13:07 - Arpit: ?
+22/08/2022, 13:07 - Priyam Shankar Vit: Naam to rahna hi hai
+22/08/2022, 13:07 - Priyam Shankar Vit: Nahi bhai kahi nahi aaya
+22/08/2022, 13:07 - Priyam Shankar Vit: 😂
+22/08/2022, 13:07 - Arpit: Koi nhi
+22/08/2022, 13:07 - Arpit: Hmlog direct
+22/08/2022, 13:07 - Priyam Shankar Vit: Hn
+22/08/2022, 13:07 - Arpit: Placements phodenge
+22/08/2022, 13:07 - Arpit: Bhai
+22/08/2022, 13:07 - Priyam Shankar Vit: 💯
+22/08/2022, 13:08 - Arpit: Web d av start kr rhe
+22/08/2022, 13:08 - Priyam Shankar Vit: Badhiya hai karo maja aayega
+22/08/2022, 13:08 - Arpit: Kk nair me tm bhi hai na
+22/08/2022, 13:08 - Arpit: Haa bhai
+22/08/2022, 13:08 - Priyam Shankar Vit: Haa
+22/08/2022, 13:08 - Priyam Shankar Vit: Bahut ajeeb paper dega wo
+22/08/2022, 13:08 - Arpit: Sala gandu jaisa subject hai
+22/08/2022, 13:08 - Arpit: Haa bhai
+22/08/2022, 13:08 - Arpit: Gaand phad dega aaj
+22/08/2022, 13:08 - Priyam Shankar Vit: 6 page ka question hi hai
+22/08/2022, 13:08 - Arpit: Chlo milte hai
+22/08/2022, 13:08 - Priyam Shankar Vit: Whi
+22/08/2022, 13:08 - Arpit: 2.30 pr
+22/08/2022, 13:08 - Priyam Shankar Vit: Okk
+22/08/2022, 13:09 - Arpit: Aree bc
+22/08/2022, 13:09 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 13:11 - Arpit: Aree mai ye mai
+22/08/2022, 13:17 - Priyam Shankar Vit: 😢
+22/08/2022, 15:25 - Arpit: Bhai
+22/08/2022, 15:25 - Arpit: 1.2 ke baad ka kchh bhejo yaar
+22/08/2022, 15:31 - Priyam Shankar Vit: kuch se kuch likh rhe hain
+22/08/2022, 15:37 - Arpit: Achha bhai
+22/08/2022, 15:52 - Arpit: Bhai
+22/08/2022, 15:52 - Arpit: 2.1
+22/08/2022, 15:52 - Arpit: Bhejo to
+22/08/2022, 15:54 - Arpit: Bhejo bhai!!
+22/08/2022, 15:54 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 16:00 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 16:00 - Priyam Shankar Vit: <Media omitted>
+22/08/2022, 16:10 - Priyam Shankar Vit: 🥲🥲
+22/08/2022, 16:12 - Arpit: Bhai ksm se
+22/08/2022, 16:12 - Arpit: Gaand pht gyi
+22/08/2022, 16:12 - Arpit: Bura haal ho gya
+22/08/2022, 16:12 - Arpit: Ek dm
+22/08/2022, 16:12 - Priyam Shankar Vit: Meri to fati hi hui hai abhit k
+22/08/2022, 16:12 - Priyam Shankar Vit: Abhi tk
+22/08/2022, 16:12 - Arpit: Fail bhi kr skta hai ye mc
+22/08/2022, 16:12 - Priyam Shankar Vit: Kya likhe kuch nahi pata
+22/08/2022, 16:12 - Priyam Shankar Vit: Lekin likh diye
+22/08/2022, 16:13 - Priyam Shankar Vit: Iska darr to hai kyuki kuch bhi likhe hain uska sense nahi ban rha
+22/08/2022, 16:13 - Arpit: Whi haal hai hr jgh
+22/08/2022, 16:13 - Priyam Shankar Vit: Hn
+22/08/2022, 16:13 - Priyam Shankar Vit: Bhar me jaye, exam khatam hua bas🤩🤩
+22/08/2022, 17:00 - Arpit: Haa bhai
+22/08/2022, 17:00 - Arpit: Lekin
+22/08/2022, 17:00 - Arpit: Tee ke liye pardhna pr jayega bhai
+22/08/2022, 17:40 - Priyam Shankar Vit: Hn ye bhi hai
+29/08/2022, 11:51 - Priyam Shankar Vit: Bhai
+29/08/2022, 11:52 - Priyam Shankar Vit: Sirf 30 diye
+29/08/2022, 11:55 - Arpit: hmko 38
+29/08/2022, 11:55 - Arpit: bc pta nhi
+29/08/2022, 11:55 - Arpit: kya
+29/08/2022, 11:55 - Priyam Shankar Vit: Kya baat hai
+29/08/2022, 11:55 - Arpit: marking kiya hai
+29/08/2022, 12:48 - Priyam Shankar Vit: Bhai marks kaise kaise distribute kiya hai
+29/08/2022, 12:49 - Arpit: <Media omitted>
+29/08/2022, 12:49 - Priyam Shankar Vit: Bhai 5 ka "a" me kya likhe the
+31/08/2022, 14:50 - Arpit: Kitna
+31/08/2022, 14:50 - Arpit: Diya
+31/08/2022, 14:50 - Arpit: Pom me
+31/08/2022, 14:50 - Arpit: <Media omitted>
+31/08/2022, 14:50 - Arpit: Hmko absent hi kr dia
+31/08/2022, 14:50 - Arpit: Bsdka
+31/08/2022, 14:50 - Arpit: Bole hai usko
+31/08/2022, 14:50 - Arpit: Ab check kr rha hai
+31/08/2022, 15:50 - Priyam Shankar Vit: Are bhai
+31/08/2022, 15:51 - Priyam Shankar Vit: Bhai hmko to bahut jyada dediya
+31/08/2022, 15:52 - Priyam Shankar Vit: 46 de diya hai🤯
+31/08/2022, 15:55 - Arpit: Bhaut bharia bhai
+31/08/2022, 15:55 - Arpit: Mereko
+31/08/2022, 15:55 - Arpit: 45
+31/08/2022, 15:55 - Priyam Shankar Vit: Kya baat hai
+31/08/2022, 15:55 - Priyam Shankar Vit: Tumhara ethics kaisa chal rha hai
+31/08/2022, 15:56 - Arpit: Ethics to phirse
+31/08/2022, 15:56 - Arpit: Drop kr diye thea na bhai
+31/08/2022, 15:56 - Arpit: Wha jake
+31/08/2022, 15:56 - Arpit: Kon pqrdhta
+31/08/2022, 15:56 - Arpit: Pardhta
+31/08/2022, 15:56 - Priyam Shankar Vit: Accha offline tha
+31/08/2022, 15:56 - Priyam Shankar Vit: Koi ni
+01/09/2022, 12:08 - Priyam Shankar Vit: Kitna aaya
+01/09/2022, 12:08 - Arpit: 41
+01/09/2022, 12:08 - Arpit: Bhai
+01/09/2022, 12:08 - Arpit: Tmko
+01/09/2022, 12:08 - Arpit: ?
+01/09/2022, 12:09 - Priyam Shankar Vit: 30
+01/09/2022, 12:09 - Arpit: Itna km kaise bhai
+01/09/2022, 12:09 - Arpit: Sara answers
+01/09/2022, 12:09 - Priyam Shankar Vit: Kya pata
+01/09/2022, 12:09 - Arpit: To tm likhwaye ho hmlog ko
+01/09/2022, 12:09 - Arpit: Ye ho kya rha hai
+01/09/2022, 12:09 - Arpit: Tmhare sath bhai
+01/09/2022, 12:09 - Arpit: ?
+01/09/2022, 12:09 - Priyam Shankar Vit: 😔
+01/09/2022, 12:09 - Arpit: Bhai
+01/09/2022, 12:09 - Arpit: Tm abse
+01/09/2022, 12:09 - Arpit: Whi likhna
+01/09/2022, 12:09 - Arpit: Jo hm bheje
+01/09/2022, 12:09 - Arpit: Bc
+01/09/2022, 12:10 - Arpit: Bhaut jyada km reh jaa rha hai tmhara
+01/09/2022, 12:10 - Arpit: Grp me join krlenge
+01/09/2022, 12:10 - Arpit: Tmko
+01/09/2022, 12:10 - Arpit: Whi likhna
+01/09/2022, 12:10 - Arpit: Kyuki
+01/09/2022, 12:10 - Arpit: Km se km same no. To ayega
+01/09/2022, 12:10 - Priyam Shankar Vit: Jo bheja wohi likha hai bhai
+01/09/2022, 12:10 - Priyam Shankar Vit: Ek baar bhejoge apna paper pls
+01/09/2022, 12:10 - Arpit: Naah bhai
+01/09/2022, 12:10 - Arpit: Haa bhej rhe bhai
+01/09/2022, 12:11 - Arpit: <Media omitted>
+01/09/2022, 12:11 - Arpit: Jaa rha hai bhai
+01/09/2022, 12:12 - Priyam Shankar Vit: Ok
+01/09/2022, 12:13 - Priyam Shankar Vit: 3 aur 5 me kitna di hai?
+01/09/2022, 12:14 - Arpit: 5 me
+01/09/2022, 12:14 - Arpit: 5 bss
+01/09/2022, 12:14 - Arpit: Aur 3 me
+01/09/2022, 12:14 - Arpit: 9
+01/09/2022, 12:14 - Priyam Shankar Vit: Ok
+01/09/2022, 12:14 - Arpit: Tmhari
+01/09/2022, 12:14 - Arpit: Usi me kaati hai kya
+01/09/2022, 12:14 - Priyam Shankar Vit: 5 6
+01/09/2022, 12:14 - Arpit: Km di hai
+01/09/2022, 12:14 - Arpit: 3 me
+01/09/2022, 12:15 - Priyam Shankar Vit: Hn
+01/09/2022, 12:46 - Priyam Shankar Vit: 35 kiye bhai
+01/09/2022, 12:57 - Arpit: Good bhai
+01/09/2022, 13:08 - Arpit: Bhai
+01/09/2022, 13:08 - Arpit: Answer batate jai
+01/09/2022, 13:08 - Arpit: Jao
+01/09/2022, 13:13 - Arpit: Priyam yaar
+01/09/2022, 13:13 - Arpit: 6th pta hai
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: <Media omitted>
+01/09/2022, 13:15 - Priyam Shankar Vit: Ye lo bhai
+01/09/2022, 13:15 - Arpit: Aree thnx bhai
+01/09/2022, 13:29 - Arpit: Bhai
+01/09/2022, 13:29 - Arpit: Chut gya mera to quiz
+01/09/2022, 13:29 - Arpit: Pura
+01/09/2022, 13:30 - Arpit: Tmko kitna aya
+01/09/2022, 13:30 - Priyam Shankar Vit: 11
+01/09/2022, 13:30 - Arpit: Chlo kchh aa gya
+01/09/2022, 13:30 - Priyam Shankar Vit: Hn
+05/09/2022, 19:34 - Arpit: Bhai
+05/09/2022, 19:34 - Arpit: Tmhara
+05/09/2022, 19:34 - Arpit: Linked in wala
+05/09/2022, 19:34 - Arpit: Intern ka test hai kya
+05/09/2022, 19:34 - Arpit: ?
+05/09/2022, 20:42 - Priyam Shankar Vit: Hn bhai usi mein the
+09/09/2022, 17:33 - Arpit: Consider this C Program, C++ Program, Java Program, C# Program, or Python Program. It reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it calls processArray on the array, and then prints the contents of the array on standard output.
+
+Currently, processArray does not modify the array. You have to change this program so that any sequence of two or more consecutive 3-digit numbers in the array is replaced by a single integer that is the maximum of all the numbers in that sequence. The processArray method should modify the array in-place (preferably without creating a new array), and it should return the new length of the modified array.
+
+For example, if these numbers were provided on the standard input:
+
+101
+317
+332
+62
+1226
+631
+865
+539
+62
+9
+-1
+Then the program should print:
+
+332
+62
+1226
+865
+62
+9
+
+Please read this example carefully to
+09/09/2022, 17:33 - Arpit: Bhai ye wala
+09/09/2022, 17:33 - Arpit: Kr do na
+09/09/2022, 17:33 - Arpit: Program jldi ae
+09/09/2022, 17:34 - Priyam Shankar Vit: Bahqr hain bhai😢
+09/09/2022, 17:34 - Arpit: Achha koi
+09/09/2022, 17:34 - Arpit: Nhi bhai
+09/09/2022, 20:18 - Arpit: What command is used to monitor system load in Linux?
+
+Select the closest option
+load
+systemstats
+top
+taskmanager
+taskmgr
+09/09/2022, 20:18 - Arpit: batao to ye bhai
+09/09/2022, 20:19 - Arpit: linux chalate ho tm
+09/09/2022, 20:19 - Priyam Shankar Vit: Top
+09/09/2022, 20:20 - Arpit: What linux command will show you the (only the) last few lines of a file named log.1
+
+Select the closest option
+echo log.1
+tail log.1
+bottom log.1
+print log.1
+ten log.1
+09/09/2022, 20:20 - Arpit: ye bhi batao bhai
+09/09/2022, 20:20 - Arpit: See this implementation of a hash function. It will be used for putting C-style null-terminated char * strings in a hashtable:
+
+int hash(char *str) {
+    return strlen(str); /* return length of string */
+}
+Which of the following statements are true?
+
+Pick all that apply
+This is an invalid hash function, because hash function should return a bitmap
+This is a good hash function because it returns different values for different strings
+This is a bad hash function because it returns the same value for all strings of the same length.
+This will cause the hashtable implementation to crash because it can return the same hash value for different strings
+This will cause the hashtable implementation to be inefficient because it will cause the same hash value to be returned for many different strings
+09/09/2022, 20:22 - Priyam Shankar Vit: Tail
+09/09/2022, 20:22 - Arpit: ye walaa bhai
+09/09/2022, 20:23 - Priyam Shankar Vit: Last wala
+09/09/2022, 20:23 - Arpit: pkka
+09/09/2022, 20:23 - Priyam Shankar Vit: 80 percent sure
+09/09/2022, 20:23 - Priyam Shankar Vit: Last hi hoga
+09/09/2022, 20:24 - Arpit: You are told to create a collection which guarantees that no duplicate elements are stored. Which of the following would be the appropriate data-structure for this purpose:
+
+Pick all that apply
+Linked List
+Queue
+Deque
+Hashtable
+Stack
+09/09/2022, 20:24 - Priyam Shankar Vit: Hashtable
+09/09/2022, 20:25 - Arpit: B is a binary search tree with n nodes. Every node of B stores an integer. You have to print all the integers in B in sorted order. What would the run-time complexity of this operation be?
+
+Select the closest option
+O👎
+O(log n)
+09/09/2022, 20:25 - Arpit: O(n log n)
+O(n^2)
+Depends upon the structure of the tree
+09/09/2022, 20:26 - Arpit: shuruwat me big o n hai
+09/09/2022, 20:26 - Priyam Shankar Vit: Ha yahi hoga
+09/09/2022, 20:26 - Arpit: Consider the following program:
+
+String n_times_n(int n) {
+    StringBuffer b = new StringBuffer("0");
+    int n_n = n*n;
+    for (int i=0; i<n_n; i++) {
+        b.append (", " + i);
+    }
+    return b.toString();
+}
+A call to n_times_n(1000) takes 1 second to complete. The time taken for n_times_n(2000) is likely to be closest to:
+
+Select the closest option
+1 second
+1.4142 seconds
+1.5 seconds
+2 seconds
+4 seconds
+09/09/2022, 20:28 - Arpit: nhi ho rha hai bhai?
+09/09/2022, 20:28 - Priyam Shankar Vit: 2 second most probably
+09/09/2022, 20:29 - Priyam Shankar Vit: Ha 2 sec hi hoga
+09/09/2022, 20:29 - Arpit: Consider the following SQL query:
+
+SELECT Customer.Name, Store.Name 
+FROM Customer, Store
+WHERE Customer.StoreID = Store.ID
+AND Customer.Age > 30
+AND Store.Location = 'NCR'
+Which of the following statements are likely to be true?
+
+Pick all that apply
+If there is an Customer of age 32 whose StoreID does not match any ID in the Store table, then that Customer's name will be included in the output of this query with a NULL value in the place of Store.Name
+If there is an Customer of age 32 whose StoreID matches the ID of two different rows in the Store table, and the Location of both those Stores is 'NCR' then that Customer's name will appear twice in the output of this query
+If there is an Customer of age 32 whose StoreID matches the ID of two different rows in the Store table, and the Location of both those Stores is 'NCR', and the Name of both those Stores is the same, then that Customer.Name, Store.Name pair will appear only once in the output of this query
+If there is an Customer of age 32 whose StoreID matches the ID of one row in the Store table, and the Name of that Store is NULL, then that Customer's name will not be included in the output of this query.
+09/09/2022, 20:29 - Priyam Shankar Vit: Dbms ka koi idea nahi hai bhai
+09/09/2022, 20:31 - Arpit: code ke liye baitha rehna abhi bhai plss
+09/09/2022, 20:31 - Priyam Shankar Vit: Bhai hm market me hain🥲
+09/09/2022, 20:31 - Priyam Shankar Vit: Formals le rhe banglore ke liye
+09/09/2022, 20:31 - Arpit: okk koi nhi bhai
+09/09/2022, 20:31 - Arpit: chlo lelo aram se
+09/09/2022, 20:32 - Priyam Shankar Vit: Ok
+09/09/2022, 20:33 - Priyam Shankar Vit: 5 mint me pahuchenge ghar
+09/09/2022, 20:34 - Arpit: haa bhai pahauch hi jao dekh le na
+09/09/2022, 20:34 - Priyam Shankar Vit: Ok
+09/09/2022, 20:40 - Arpit: For this problem, you have to write a program that reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it finds the highest number in the array that is less than 100 and prints that to the standard output. It should return 0 if the array has no numbers less than 100. Note: your program must not print anything else to the standard output.
+
+For example, if these numbers were provided on the standard input:
+
+95
+817
+3
+51
+-1
+When your program is run, it should output 95 (and nothing else).
+
+
+Please read this example carefully to make sure you really, really understand what the program is supposed to do. If your submission is rejected by the system, it is very likely that you did not read the instructions properly, or did not study the example closely.
+09/09/2022, 20:40 - Arpit: hoga bhai
+09/09/2022, 20:40 - Arpit: ek baar check kr lo?
+09/09/2022, 20:43 - Priyam Shankar Vit: C++ me karna hai?
+09/09/2022, 20:43 - Arpit: haa bhai
+09/09/2022, 20:43 - Arpit: ye hogya waise
+09/09/2022, 20:43 - Arpit: next bhej rhe hai
+09/09/2022, 20:43 - Priyam Shankar Vit: Ok
+09/09/2022, 20:46 - Arpit: bhai isme
+09/09/2022, 20:46 - Arpit: sirf 95 ana chaiye
+09/09/2022, 20:46 - Arpit: dekho na check krke
+09/09/2022, 20:47 - Arpit: hmlog ke code me 4 number aa ja rha hai
+09/09/2022, 20:47 - Arpit: bhai
+09/09/2022, 20:47 - Priyam Shankar Vit: 100 se niche aana chahiye
+09/09/2022, 20:47 - Arpit: tmko code bhejte hai
+09/09/2022, 20:47 - Arpit: V
+09/09/2022, 20:47 - Priyam Shankar Vit: Bhejo
+09/09/2022, 20:47 - Arpit: #include<iostream>
+
+using namespace std;
+
+//Function to find biggest number
+
+int big(int arr[] ) {
+
+   int i=0 ,biggest ;
+
+   while (arr[i]>=0 ){
+
+        biggest = arr[i] ;
+
+       if( biggest < arr[i+1]){
+
+           biggest = arr[i+1] ;
+
+       }
+
+       i++ ;
+09/09/2022, 20:47 - Arpit: }
+
+   return biggest ;
+
+}
+
+int main ( ){
+
+   int num,i=0 ,arr[20], flag = 0;
+
+//Codes to take numbers as input
+
+   while(num>=0){
+
+       cout<<"Enter numbers: ";
+
+       cin>>num;
+
+       arr[i] = num  ;
+
+       i++;
+
+   }
+
+//Codes to check number is less than 100 as well as biggest number.
+
+   i=0;
+
+   while(arr[i]>=0) {
+
+      if(arr[i]<100 && arr[i]==big(arr)){
+
+           flag = 1 ;
+
+           break;
+
+      }
+
+       i++ ;
+
+   }
+
+   if(flag==1) {
+
+       cout<<"\nThe highest number is " <<arr[i] ;
+
+   }
+
+   else cout<<"\nThe result is : 0" ;
+
+//Codes to see the array elements for cross verification
+
+   i=0;
+
+   cout<<"\n\nArray contains: " ;
+
+   while(arr[i]>=0) {
+
+       cout<<arr[i] <<" " ;
+
+       i++ ;
+
+   }
+
+return 0;
+
+}
+09/09/2022, 20:53 - Arpit: bhai hua
+09/09/2022, 20:53 - Arpit: ??
+09/09/2022, 20:53 - Priyam Shankar Vit: 2 mint bas ho gaya
+09/09/2022, 20:53 - Arpit: haa bhai
+09/09/2022, 20:54 - Priyam Shankar Vit: #include <iostream>
+using namespace std; 
+
+int checkSum(int arr[],int n){
+    int maxm=0; 
+    for(int i=0; i<=n; i++){
+        if(arr[i]<100){
+            maxm=max(arr[i],maxm);
+        }
+    }
+    return maxm;
+
+}
+
+int main(){
+
+    int arr[10000];
+    int n=0;
+    int i=0;
+    while(n!=-1){
+        cin>>n;
+        arr[i]=n;
+        i++;
+    }
+    cout<<checkSum(arr, i);
+    return 0;
+}
+09/09/2022, 20:54 - Priyam Shankar Vit: array ka maximum size kya diya hai
+09/09/2022, 20:56 - Arpit: error bata rha hai submission me bhai
+09/09/2022, 20:56 - Priyam Shankar Vit: kya error de rha
+09/09/2022, 20:56 - Arpit: For this problem, you have to write a program that reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it finds the highest number in the array that is less than 100 and prints that to the standard output. It should return 0 if the array has no numbers less than 100. Note: your program must not print anything else to the standard output.
+
+For example, if these numbers were provided on the standard input:
+09/09/2022, 20:57 - Arpit: yhi question hai bhai bss
+09/09/2022, 20:57 - Priyam Shankar Vit: paste karo error yaha
+09/09/2022, 20:57 - Arpit: bss ye bheja hai bhai
+09/09/2022, 20:57 - Priyam Shankar Vit: error kya hai
+09/09/2022, 20:58 - Arpit: error kchh nhi dikha rha hai bhai
+09/09/2022, 20:58 - Arpit: bss error bol rha hai
+09/09/2022, 20:58 - Priyam Shankar Vit: Acca ek sec
+09/09/2022, 20:59 - Arpit: haa bhai
+09/09/2022, 21:00 - Arpit: Consider this C Program, C++ Program, Java Program, C# Program, or Python Program. It reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it calls processArray on the array, and then prints the contents of the array on standard output.
+
+Currently, processArray does not modify the array. You have to change this program so that any sequence of two or more consecutive two-digit numbers in the array are removed from the array and replaced with the smallest number from that sequence. The processArray method should modify the array in-place (preferably without creating a new array), and it should return the new length of the modified array.
+
+For example, if these numbers were provided on the standard input:
+
+3
+26
+32
+612
+121
+61
+23
+38
+661
+6
+-1
+Then the program should print:
+
+3
+26
+612
+121
+23
+661
+6
+Specifically, from the sequence 26, 32, only 26 is retained because it is the least number of that sequence, and from the sequence 61, 23, 38, only 23 is retained.
+09/09/2022, 21:00 - Arpit: jldi dekho bhai
+09/09/2022, 21:00 - Arpit: 2 min hai bhai bss
+09/09/2022, 21:05 - Priyam Shankar Vit: #include <iostream>
+#include<vector>
+using namespace std; 
+
+int checkSum(vector<int>arr,int n){
+    int maxm=0; 
+    for(int i=0; i<=n; i++){
+        if(arr[i]<100){
+            maxm=max(arr[i],maxm);
+        }
+    }
+    return maxm;
+
+}
+
+int main(){
+
+    // int arr[10000];
+    vector<int>arr;
+
+    int n=0;
+    int i=0;
+    while(n>=0){
+        cin>>n;
+        // arr[i]=n;
+        arr.push_back(n);
+        i++;
+    }
+    cout<<checkSum(arr, i);
+    return 0;
+}
+09/09/2022, 21:05 - Priyam Shankar Vit: 1st ka hai
+09/09/2022, 21:05 - Arpit: Bhai
+09/09/2022, 21:05 - Arpit: Love u yaar
+09/09/2022, 21:05 - Arpit: Km se km
+09/09/2022, 21:05 - Arpit: 1 code bn gya
+09/09/2022, 21:06 - Arpit: Wrna wo bhi chutata aaj
+09/09/2022, 21:06 - Priyam Shankar Vit: tumhara tha??
+09/09/2022, 21:06 - Priyam Shankar Vit: sorry bhai dusra samajh hi nahi aaya
+09/09/2022, 21:06 - Priyam Shankar Vit: bmc wala tha
+09/09/2022, 21:06 - Priyam Shankar Vit: ??
+09/09/2022, 21:07 - Arpit: Haa bhai
+09/09/2022, 21:07 - Arpit: Koi nhi bhai
+09/09/2022, 21:13 - Priyam Shankar Vit: Total coding question kitna tha
+09/09/2022, 21:13 - Arpit: Bss 2 bhai
+09/09/2022, 21:14 - Arpit: Aptitude hai
+09/09/2022, 21:14 - Priyam Shankar Vit: Aur mcq?
+09/09/2022, 21:14 - Arpit: Linux se hai question
+09/09/2022, 21:14 - Arpit: Hai
+09/09/2022, 21:14 - Priyam Shankar Vit: Kitna
+09/09/2022, 21:14 - Arpit: Aptitude ke baad sb whi hai bhai
+09/09/2022, 21:14 - Priyam Shankar Vit: Copy hai question ka tumhare paas?
+09/09/2022, 21:15 - Priyam Shankar Vit: 😅
+09/09/2022, 21:16 - Arpit: Bhai
+09/09/2022, 21:16 - Arpit: Question same hai
+09/09/2022, 21:16 - Arpit: Aptitude me baa
+09/09/2022, 21:16 - Arpit: Numerical value change hai vss
+09/09/2022, 21:16 - Arpit: Mai bhej rha hu
+09/09/2022, 21:16 - Arpit: Sara
+09/09/2022, 21:16 - Arpit: Questions bhai
+09/09/2022, 21:17 - Priyam Shankar Vit: Kya baat hai
+09/09/2022, 21:17 - Priyam Shankar Vit: Bhej do 🙏
+09/09/2022, 21:18 - Arpit: The average age of 4 men is 39. If there difference between the oldest 3 men is 3 and the youngest man is 5 less than the second youngest, how old is the youngest man? If you think there isnt sufficient data to answer this question, then put 0 as your answer
+09/09/2022, 21:18 - Arpit: Leena drives from Nashik to Pune at an average speed of 90kmph. Then she immediately drives from Pune to Nashik , at an average speed of 110kmph. What is is average speed in kmph for the whole journey? Round off your answer to the nearest whole number. If you think there isnt sufficient data to answer this question, then put 0 as your answer
+09/09/2022, 21:18 - Arpit: A wine connoisseur had Rs. 6800. She used some of that money to buy two wine bottles, and then sold them both for Rs. 2400 each. She made a profit of 20% on one and a loss of 50% on the other. How many rupees does she have left now?
+09/09/2022, 21:18 - Arpit: In a group of 64 people, exactly 46 of them are cricket lovers, exactly 46 of them are football lovers. 9 of them dont love either sport. How many of them love both sports? If you think there isnt sufficient data to answer this question, then put 0 as your answer.
+09/09/2022, 21:18 - Arpit: A pair of pool players have 3 different cues, and every day, they pick two random cues and play snooker for an hour. In the last year, they have played together a total of 450 hours. Interestingly, their random picking of cues has worked so well that each cue has been used the same number of hours. How many hours has each cue been used?
+09/09/2022, 21:18 - Arpit: I told a fruit seller to give me Rs. 240 worth of pomegranates. After he gave me the pomegranates, I forced him to give me 6 extra pomegranates for free. He complained that because of giving me the extra pomegranates, he is getting Rs. 80 per dozen less on this transaction than the original price. How many pomegranates did I get (including the 6 extra pomegranates)?
+09/09/2022, 21:18 - Arpit: At a factory, the 35 workers in the design shop work at 2 small tables and 3 large tables. The 16 workers in the machine shop all work at small tables. The 63 workers in the QA department all work at large tables. If the number of large tables needed for the QA department is 3 more than the number of small tables needed for machine shop, how many workers can work at each large table? If you think there isnt sufficient data to answer this question, then put 0 as your answer. (Assume that the number of workers who work at each small table is always the same, and the number of workers who work at any large table is also always the same.)
+09/09/2022, 21:18 - Arpit: Half of a baker’s life was over before he got his degree. After that he spent 1/7 of his life working for a big hotel. Then he started his own bakery and spent 1/5 of his life doing this. However, he had to retire at this point because of health issues, and died 11 years later? How old was he when he retired?
+
+Answer
+09/09/2022, 21:18 - Arpit: Reversing the digits of the first number gives the second number. The larger number is 8/3 times the the smaller number. What is the larger number
+09/09/2022, 21:18 - Arpit: 8 years ago, a woman had 2 children, and the sum of their ages was was exactly half of her age. 7 years ago, she had another child. Today, the sum of the ages of all the children is exactly equal to her age. What is her age today?
+09/09/2022, 21:18 - Arpit: A Java class C has just one constructor, and that is declared as protected. Which of the following statements is true
+
+Pick all that apply
+This is illegal and will result in a compiler error
+This declaration is worthless because it is not possible to create an instance of class C
+Such a class is useful if class C has a static method that can create and return new instances of C
+Such a class is useful if there exists another class derived from C and this derived class has a constructor that uses the 'super' keyword.
+09/09/2022, 21:18 - Arpit: Inter-process Communication
+
+Select the closest option
+is required for all processes
+is usually done via disk drives
+is never necessary
+allows processes to synchronize activity
+09/09/2022, 21:18 - Arpit: A page fault:
+
+Select the closest option
+is an error is a specific page
+occurs when a program accesses a page of memory
+is an access to a page not currently in memory
+is a reference to a page belonging to another program
+None of the above
+09/09/2022, 21:18 - Arpit: Consider a router that has the following IP address: 122.169.6.1/23. Which of the following are valid IP addresses for hosts attached to this router?
+
+Pick all that apply
+122.169.3.100
+122.168.6.2
+122.169.6.23
+122.169.7.23
+122.169.7.200
+09/09/2022, 21:18 - Arpit: A Java class B has 3 public methods, interface I1 has 3 methods, and interface I2 has 5 methods. If class D extends B and implements I1, I2, what is the minimum number of methods that class D must implement
+
+Select the closest option
+0 methods
+3 methods
+5 methods
+8 methods
+11 methods
+09/09/2022, 21:18 - Arpit: Which of the following commands will correctly extract files from an archive named foo.tar.gz that has been created using tar + gzip
+
+Pick all that apply
+unzip foo.tar.gz
+unzip -r foo.tar.gz
+cat foo.tar.gz
+tar -xvf foo.tar.gz
+tar -czf foo.tar.gz
+09/09/2022, 21:18 - Arpit: To check disk usage by folders / files which command could be used?
+
+Select the closest option
+df
+du
+ls
+ll
+09/09/2022, 21:18 - Arpit: What command is used to monitor system load in Linux?
+
+Select the closest option
+load
+systemstats
+top
+taskmanager
+taskmgr
+09/09/2022, 21:18 - Arpit: What linux command will show you the (only the) last few lines of a file named log.1
+
+Select the closest option
+echo log.1
+tail log.1
+bottom log.1
+print log.1
+ten log.1
+09/09/2022, 21:18 - Arpit: See this implementation of a hash function. It will be used for putting C-style null-terminated char * strings in a hashtable:
+
+int hash(char *str) {
+    return strlen(str); /* return length of string */
+}
+Which of the following statements are true?
+
+Pick all that apply
+This is an invalid hash function, because hash function should return a bitmap
+This is a good hash function because it returns different values for different strings
+This is a bad hash function because it returns the same value for all strings of the same length.
+This will cause the hashtable implementation to crash because it can return the same hash value for different strings
+This will cause the hashtable implementation to be inefficient because it will cause the same hash value to be returned for many different strings
+09/09/2022, 21:18 - Arpit: You are told to create a collection which guarantees that no duplicate elements are stored. Which of the following would be the appropriate data-structure for this purpose:
+
+Pick all that apply
+Linked List
+Queue
+Deque
+Hashtable
+Stack
+09/09/2022, 21:18 - Arpit: B is a binary search tree with n nodes. Every node of B stores an integer. You have to print all the integers in B in sorted order. What would the run-time complexity of this operation be?
+
+Select the closest option
+O👎
+O(log n)
+O(n log n)
+O(n^2)
+Depends upon the structure of the tree
+09/09/2022, 21:18 - Arpit: Consider the following program:
+
+String n_times_n(int n) {
+    StringBuffer b = new StringBuffer("0");
+    int n_n = n*n;
+    for (int i=0; i<n_n; i++) {
+        b.append (", " + i);
+    }
+    return b.toString();
+}
+A call to n_times_n(1000) takes 1 second to complete. The time taken for n_times_n(2000) is likely to be closest to:
+
+Select the closest option
+1 second
+1.4142 seconds
+1.5 seconds
+2 seconds
+4 seconds
+09/09/2022, 21:18 - Arpit: You need to use a map data structure as follows:
+
+It stores (key, value) pairs, and both the key and value are of type String
+Inserting a new (key, value) pair in the map must have a performance time of O(1) in the worst case (i.e. it should be a constant time operation)
+Looking up a key in the map must have a performance time of O(n) in the worst case
+It is expected to be a main-memory data structure
+Which of the following data structures is most appropriate for this requirement
+
+Select the closest option
+Array
+Queue
+Linked List
+Binary Search Tree
+Hashtable
+09/09/2022, 21:18 - Arpit: Consider the following SQL query:
+
+SELECT Customer.Name, Store.Name 
+FROM Customer, Store
+WHERE Customer.StoreID = Store.ID
+AND Customer.Age > 30
+AND Store.Location = 'NCR'
+Which of the following statements are likely to be true?
+
+Pick all that apply
+If there is an Customer of age 32 whose StoreID does not match any ID in the Store table, then that Customer's name will be included in the output of this query with a NULL value in the place of Store.Name
+If there is an Customer of age 32 whose StoreID matches the ID of two different rows in the Store table, and the Location of both those Stores is 'NCR' then that Customer's name will appear twice in the output of this query
+If there is an Customer of age 32 whose StoreID matches the ID of two different rows in the Store table, and the Location of both those Stores is 'NCR', and the Name of both those Stores is the same, then that Customer.Name, Store.Name pair will appear only once in the output of this query
+If there is an Customer of age 32 whose StoreID matches the ID of one row in the Store table, and the Name of that Store is NULL, then that Customer's name will not be included in the output of this query.
+09/09/2022, 21:18 - Arpit: In an RDBMS, consider a table T with columns A, B, and C, all of which are of type CHAR[10]. The admin one day decides to build an index on column A. After this change, which of the following statements are most likely to be true?
+
+Pick all that apply
+Inserting a new row into table T will now be slower than before
+The query select * from T where B = 'X' will run faster.
+The query select * from T where A <> 'X' will run faster
+The query select min(A) from T will run faster
+The total space taken to store T will increase
+09/09/2022, 21:18 - Arpit: Which of the following where clause expressions can be used to match all names starting with the letter R in an SQL query?
+
+Pick all that apply
+name LIKE 'R%'
+name BETWEEN 'R' and 'S'
+SUBSTRING(name, 1, 1) = 'R'
+name >= 'R' AND name < 'S'
+09/09/2022, 21:18 - Arpit: Consider the following SQL query that will be used with an RDBMS:
+
+SELECT Customer.Name 
+FROM Customer, Store
+WHERE Customer.StoreID = Store.ID
+AND Customer.Age > 30
+AND Store.Location = 'NCR'
+Assume that ID is a primary key of the table Store. Which of the following statements are likely to be true?
+
+Pick all that apply
+In most cases, this query is likely to get faster if an index is built on the Location column of the Store table.
+If there is an index on both the Customer.Age column and the Store.Location column, the database will be forced to choose which index to use to fetch matching rows, since it cannot use both.
+If this query is submitted to the database, it will automatically build an index on the Location column of the Store table.
+If the database has an index on the Store.Location column, but no index on the Customer.Age column, then the database is guaranteed to first use the index to fetch all Store rows with Location = 'NCR' and then fetch the matching Customer rows
+If the database has does not have an index on the Location column of the Store table, then the database is guaranteed to first fetch rows of the Customer table with Age > 30 and then join those with matching Store rows.
+09/09/2022, 21:18 - Arpit: Which of the following statements are true about a stored procedure in an RDBMS?
+
+Pick all that apply
+A stored procedure can often run faster than an equivalent query because it is to be compiled only once
+A stored procedure can be given permissions to access some data that the user of the stored procedure cannot directly access
+A stored procedure is more portable than a query because it is write-once-run-anywhere
+09/09/2022, 21:18 - Arpit: For this problem, you have to write a program that reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it finds the highest number in the array that is less than 100 and prints that to the standard output. It should return 0 if the array has no numbers less than 100. Note: your program must not print anything else to the standard output.
+
+For example, if these numbers were provided on the standard input:
+
+95
+817
+3
+51
+-1
+When your program is run, it should output 95 (and nothing else).
+
+
+Please read this example carefully to make sure you really, really understand what the program is supposed to do. If your submission is rejected by the system, it is very likely that you did not read the instructions properly, or did not study the example closely.
+09/09/2022, 21:18 - Arpit: Consider this C Program, C++ Program, Java Program, C# Program, or Python Program. It reads integers from the standard input (until it gets a negative number) and puts them into an array. After that it calls processArray on the array, and then prints the contents of the array on standard output.
+
+Currently, processArray does not modify the array. You have to change this program so that any sequence of two or more consecutive two-digit numbers in the array are removed from the array and replaced with the smallest number from that sequence. The processArray method should modify the array in-place (preferably without creating a new array), and it should return the new length of the modified array.
+
+For example, if these numbers were provided on the standard input:
+
+3
+26
+32
+612
+121
+61
+23
+38
+661
+6
+-1
+Then the program should print:
+
+3
+26
+612
+121
+23
+661
+6
+Specifically, from the sequence 26, 32, only 26 is retained because it is the least number of that sequence, and from the sequence 61, 23, 38, only 23 is retained.
+09/09/2022, 21:18 - Arpit: Lo bhai
+09/09/2022, 21:18 - Arpit: Isme se
+09/09/2022, 21:18 - Arpit: Km ho skta hai baa
+09/09/2022, 21:18 - Arpit: Bss
+09/09/2022, 21:18 - Arpit: Thoda sa
+09/09/2022, 21:18 - Arpit: Wo bhi
+09/09/2022, 21:19 - Priyam Shankar Vit: Koi ni bhai itna bhej diye bahut hai
+09/09/2022, 21:19 - Priyam Shankar Vit: 🤩
+09/09/2022, 21:20 - Arpit: All the best bhai
+09/09/2022, 21:21 - Priyam Shankar Vit: Thankyou
+09/09/2022, 23:45 - Arpit: Is a process running
+In Linux, how do you verify whether the program myprog is running?
+
+Pick all that apply
+isrunning myprog
+ls -l /bin/myprog
+ps –ef | grep myprog
+telnet myprog 3306
+vi myprog
+09/09/2022, 23:48 - Priyam Shankar Vit: Ps -ef
+09/09/2022, 23:49 - Arpit: Option me nhi hai bhai
+09/09/2022, 23:49 - Priyam Shankar Vit: Grep wala
+09/09/2022, 23:49 - Priyam Shankar Vit: Ps-ef l grep myprog
+09/09/2022, 23:49 - Arpit: killall -9 command is used to
+
+Select the closest option
+kill all processes with 9 as pid
+reboot the machine
+kill all processes of a particular program
+none of the above
+09/09/2022, 23:49 - Arpit: Sry
+09/09/2022, 23:49 - Arpit: Bhai
+09/09/2022, 23:50 - Arpit: Ye question bai
+09/09/2022, 23:50 - Arpit: Hai
+09/09/2022, 23:52 - Priyam Shankar Vit: This message was deleted
+09/09/2022, 23:52 - Priyam Shankar Vit: 3rd kill all process of a particular prog
+09/09/2022, 23:54 - Arpit: Okk
+09/09/2022, 23:54 - Arpit: Bhai
+15/09/2022, 15:16 - Arpit: 😍😍
+23/09/2022, 12:14 - Arpit: Bhai
+23/09/2022, 12:14 - Arpit: Ek code me madad kr doge kya
+23/09/2022, 12:16 - Arpit: <Media omitted>
+23/09/2022, 12:16 - Arpit: <Media omitted>
+23/09/2022, 12:16 - Arpit: You deleted this message
+23/09/2022, 12:16 - Arpit: You deleted this message
+23/09/2022, 12:35 - Priyam Shankar Vit: Vit chennai me hain bhai
+23/09/2022, 12:35 - Priyam Shankar Vit: <Media omitted>
+26/09/2022, 12:07 - Arpit: <Media omitted>
+26/09/2022, 12:07 - Arpit: Bhai mera
+26/09/2022, 12:07 - Arpit: Superstar
+26/09/2022, 12:10 - Priyam Shankar Vit: 😂
+26/09/2022, 12:54 - Priyam Shankar Vit: Bhai backlog se related koi mail aaya hai
+26/09/2022, 12:55 - Arpit: Haa bhai
+26/09/2022, 12:55 - Arpit: Baat kriye
+26/09/2022, 12:55 - Arpit: Sandeep se
+26/09/2022, 12:55 - Arpit: Nhi bhr skte form usme
+26/09/2022, 12:55 - Arpit: 🤧🤧
+26/09/2022, 12:56 - Priyam Shankar Vit: Then do it
+26/09/2022, 13:00 - Arpit: Aree mtlb
+26/09/2022, 13:00 - Arpit: Mera wo form bhrne ka koi option nhi hai
+26/09/2022, 13:00 - Arpit: Phir bhi hm bhr to diye hai
+26/09/2022, 13:00 - Arpit: Abh dekho kya hota hai
+26/09/2022, 13:18 - Priyam Shankar Vit: Ooo
+28/09/2022, 13:55 - Priyam Shankar Vit: https://www.instagram.com/reel/CizOOF7J0p6/?igshid=YmMyMTA2M2Y=
+28/09/2022, 14:09 - Arpit: 🤣🤣
+02/10/2022, 21:17 - Priyam Shankar Vit: Bhai maths ka assignment hua kya
+02/10/2022, 21:19 - Arpit: Nhi bahi
+02/10/2022, 21:19 - Arpit: Bhai
+02/10/2022, 21:19 - Arpit: Dekho na
+02/10/2022, 21:19 - Arpit: Khi se jugad ho jaye to
+02/10/2022, 21:23 - Priyam Shankar Vit: Dekhte hain
+02/10/2022, 22:02 - Priyam Shankar Vit: <Media omitted>
+02/10/2022, 22:11 - Arpit: Ok
+02/10/2022, 22:23 - Priyam Shankar Vit: Tutorial 3 ka 2nd bhi yhi hoga
+02/10/2022, 22:44 - Arpit: Achha
+02/10/2022, 22:46 - Arpit: <Media omitted>
+02/10/2022, 22:54 - Priyam Shankar Vit: Thankyou bhai
+02/10/2022, 23:01 - Arpit: Priyam bhai
+02/10/2022, 23:01 - Arpit: Dusra wala
+02/10/2022, 23:01 - Arpit: Tutorial pura krke
+02/10/2022, 23:01 - Arpit: Pdf bhejna bhai
+02/10/2022, 23:02 - Priyam Shankar Vit: <Media omitted>
+02/10/2022, 23:02 - Priyam Shankar Vit: Bhai nodes ka orientation change kardena taki alag alag lage
+02/10/2022, 23:03 - Arpit: Haa bhai
+02/10/2022, 23:03 - Arpit: Ye tutorial 1 hai na
+02/10/2022, 23:03 - Arpit: ?
+02/10/2022, 23:03 - Priyam Shankar Vit: Nahi 3rd
+02/10/2022, 23:03 - Arpit: Okk
+02/10/2022, 23:05 - Arpit: Ye alag hi
+02/10/2022, 23:05 - Arpit: Pdf bnegi na bhai
+02/10/2022, 23:05 - Arpit: ?
+02/10/2022, 23:05 - Priyam Shankar Vit: Mtlb?
+02/10/2022, 23:06 - Priyam Shankar Vit: Tutorial 3 ka hai ye
+02/10/2022, 23:07 - Arpit: Haa bhai
+02/10/2022, 23:07 - Arpit: Ok
+07/10/2022, 23:17 - Priyam Shankar Vit: Bhai offline ya online
+08/10/2022, 06:46 - Arpit: Bhai online
+08/10/2022, 06:47 - Arpit: Pr agr ethics diya to mai jaunga
+08/10/2022, 06:47 - Arpit: Wha
+08/10/2022, 06:47 - Arpit: Back clear krni hai hr haal me
+08/10/2022, 12:50 - Priyam Shankar Vit: Hn ye bhi jaruri hai
+09/10/2022, 18:28 - Arpit: Bhai
+09/10/2022, 18:28 - Arpit: Jaoge tm
+09/10/2022, 18:28 - Arpit: Vit kya
+09/10/2022, 18:28 - Arpit: Hm bhar rehke hi
+09/10/2022, 18:28 - Arpit: Pardhenge
+09/10/2022, 18:28 - Arpit: Wha
+09/10/2022, 18:28 - Arpit: Pg me
+09/10/2022, 18:28 - Priyam Shankar Vit: Nahi bhai hm online hi karenge
+09/10/2022, 18:28 - Arpit: Achha
+09/10/2022, 18:28 - Arpit: Koi nhi
+09/10/2022, 18:28 - Arpit: Bhai
+09/10/2022, 18:28 - Priyam Shankar Vit: Hn
+09/10/2022, 18:29 - Priyam Shankar Vit: Sahi hai batana waha jake andr ki baten
+09/10/2022, 18:29 - Priyam Shankar Vit: 😊
+09/10/2022, 18:29 - Arpit: Naah bhai
+09/10/2022, 18:29 - Arpit: Hm wha jake
+09/10/2022, 18:29 - Arpit: Online krenge bss
+09/10/2022, 18:30 - Arpit: Agr mera ethics and values rha
+09/10/2022, 18:30 - Arpit: To wo krenge
+09/10/2022, 18:31 - Priyam Shankar Vit: Accha
+09/10/2022, 18:31 - Priyam Shankar Vit: Ye bhi theek hai
+09/10/2022, 18:31 - Priyam Shankar Vit: Sabkoi whi lr rhe kya
+09/10/2022, 18:31 - Priyam Shankar Vit: Kuch aryan ye sb?
+09/10/2022, 18:31 - Priyam Shankar Vit: Aniwesh
+09/10/2022, 18:31 - Arpit: Haa bhai kchh log abhi bole to hai
+09/10/2022, 18:31 - Arpit: Confirmation ka nhi pata
+09/10/2022, 18:32 - Priyam Shankar Vit: Sahi hai maje karo
+09/10/2022, 18:32 - Arpit: 🤣🤣🤣
+09/10/2022, 18:32 - Arpit: Maza kya bhai
+09/10/2022, 18:32 - Arpit: Abh pardhna zroori hai
+09/10/2022, 18:32 - Arpit: Ye skillvertex
+09/10/2022, 18:32 - Arpit: Wala
+09/10/2022, 18:32 - Arpit: Internship kr lu kya bhai
+09/10/2022, 18:32 - Arpit: ?
+09/10/2022, 18:32 - Priyam Shankar Vit: Paisa le rha hai to mat karo
+09/10/2022, 18:33 - Priyam Shankar Vit: Uska koi value nahi reh jayega
+09/10/2022, 18:33 - Priyam Shankar Vit: Isse accha web dev krke koo sunde sa project krlo
+09/10/2022, 18:33 - Priyam Shankar Vit: Koi sundr*
+09/10/2022, 18:34 - Arpit: Aur bhai
+09/10/2022, 18:34 - Arpit: Credits ka
+09/10/2022, 18:34 - Arpit: Phir?
+09/10/2022, 18:34 - Priyam Shankar Vit: 94 credit hua hai
+09/10/2022, 18:34 - Priyam Shankar Vit: Iss sem 24 credit
+09/10/2022, 18:35 - Priyam Shankar Vit: Next interim sem 11 credit
+09/10/2022, 18:35 - Priyam Shankar Vit: Total 3 interim sem mtlb 33 credit
+09/10/2022, 18:35 - Priyam Shankar Vit: Fir 4th year ke liye 26 ya 27 credit reh jayega bas
+09/10/2022, 18:35 - Priyam Shankar Vit: Jisme se 20 to capstone
+09/10/2022, 18:35 - Priyam Shankar Vit: Mtlb 4th year me 6 se 7 credit karna hai bhai
+09/10/2022, 18:36 - Priyam Shankar Vit: Tumhara bhi bas 6 credit extra rhega isse karna
+09/10/2022, 18:36 - Priyam Shankar Vit: Mtlb 4th year me 10 se 12 credit
+09/10/2022, 18:37 - Priyam Shankar Vit: Confuse ho gaye 😂
+09/10/2022, 18:37 - Arpit: Achha tum mera coursera aur ethics
+09/10/2022, 18:37 - Arpit: Jod ke batao ho hai na
+09/10/2022, 18:37 - Arpit: ?
+09/10/2022, 18:37 - Priyam Shankar Vit: Haan
+09/10/2022, 18:37 - Priyam Shankar Vit: Haan
+09/10/2022, 18:37 - Arpit: Haa bhai
+09/10/2022, 18:37 - Arpit: Phir to sirf
+09/10/2022, 18:37 - Arpit: 12 credits hi jyada se jyada bchta hai
+09/10/2022, 18:37 - Priyam Shankar Vit: Haan bhai
+09/10/2022, 18:37 - Arpit: Aur 4th year me bhi
+09/10/2022, 18:37 - Arpit: Pata nhi kitne sem ho jayenge
+09/10/2022, 18:37 - Priyam Shankar Vit: 😂😂
+09/10/2022, 18:38 - Priyam Shankar Vit: Web dev kiye ki nahi?
+09/10/2022, 18:38 - Arpit: Khtm bhai
+09/10/2022, 18:38 - Priyam Shankar Vit: Kya sahi baat hai
+09/10/2022, 18:38 - Arpit: Dsa sheet solve kr rhe hai ab
+09/10/2022, 18:38 - Arpit: Haa jo tm mongodb
+09/10/2022, 18:38 - Priyam Shankar Vit: Ekdm project bana bana ke stabahi macha do ab
+09/10/2022, 18:38 - Priyam Shankar Vit: Tabahi*
+09/10/2022, 18:38 - Arpit: Bhai project kya banaye
+09/10/2022, 18:38 - Arpit: Kispe banaye
+09/10/2022, 18:39 - Arpit: Thoda idea chahiye bss hmko
+09/10/2022, 18:39 - Priyam Shankar Vit: Ye to dhundna parega
+09/10/2022, 18:39 - Arpit: Whi na
+09/10/2022, 18:39 - Priyam Shankar Vit: Dekho na github khol ke senior sbka dekho kya project hai
+09/10/2022, 18:39 - Arpit: Philal hm soch rhe hai
+09/10/2022, 18:39 - Priyam Shankar Vit: Hmko khud smjh nahi aata
+09/10/2022, 18:39 - Arpit: Ki thoda data science
+09/10/2022, 18:39 - Arpit: Dekh le
+09/10/2022, 18:39 - Arpit: Uspe
+09/10/2022, 18:39 - Arpit: Project tayar kre
+09/10/2022, 18:39 - Priyam Shankar Vit: Data science me fir statistics padhna parega
+09/10/2022, 18:39 - Arpit: Kya sara fields ka data uthake
+09/10/2022, 18:40 - Priyam Shankar Vit: Fir job bhi statistics me milega
+09/10/2022, 18:40 - Arpit: Haa yhi to demerit hai bhai
+09/10/2022, 18:40 - Arpit: Isiliye to confuse hai
+09/10/2022, 18:40 - Priyam Shankar Vit: Jindgi bhar ka maths ka locha ho jayega 🥹
+09/10/2022, 18:40 - Arpit: Phir hmko utna tk hi simit rehna pr jayega
+09/10/2022, 18:40 - Priyam Shankar Vit: Hn
+09/10/2022, 18:40 - Arpit: Projects ka sochna prega bhai
+09/10/2022, 18:40 - Arpit: Web d
+09/10/2022, 18:40 - Arpit: Lekin
+09/10/2022, 18:40 - Arpit: Mazedar cheez hai
+09/10/2022, 18:40 - Priyam Shankar Vit: Hn bhai
+09/10/2022, 18:41 - Priyam Shankar Vit: Wo to hai
+09/10/2022, 18:41 - Arpit: Abhi dsa sheet solve kr rhe hai
+09/10/2022, 18:41 - Arpit: Gaand phati pri hai
+09/10/2022, 18:41 - Priyam Shankar Vit: Are mera khud
+09/10/2022, 18:41 - Priyam Shankar Vit: Confidence giral ja rha hai
+09/10/2022, 18:41 - Arpit: Naa bhai
+09/10/2022, 18:41 - Arpit: Bss
+09/10/2022, 18:41 - Arpit: Tm
+09/10/2022, 18:41 - Arpit: Jo questions baar baar puche gye hai
+09/10/2022, 18:42 - Arpit: Wo solve kro
+09/10/2022, 18:42 - Arpit: Bhai kitni hi baar bana lo
+09/10/2022, 18:42 - Priyam Shankar Vit: Hn whi kr rhe hain bhai
+09/10/2022, 18:42 - Arpit: Tmko
+09/10/2022, 18:42 - Arpit: Logic to ratna hi pr jayega
+09/10/2022, 18:42 - Arpit: Code khud kr hi lige
+09/10/2022, 18:42 - Arpit: Loge
+09/10/2022, 18:42 - Priyam Shankar Vit: Whi
+09/10/2022, 18:42 - Arpit: Bss logic
+09/10/2022, 18:42 - Arpit: Rat jao
+09/10/2022, 18:42 - Arpit: Gholke
+09/10/2022, 18:42 - Priyam Shankar Vit: Whi kr rhe bhai whi kr rhe
+09/10/2022, 18:42 - Arpit: Bharia bhai
+09/10/2022, 18:43 - Arpit: Tu lele placement bharia si
+09/10/2022, 18:43 - Arpit: Dil se chaht hai tere liye
+09/10/2022, 18:43 - Priyam Shankar Vit: Sath me lenge bhai
+09/10/2022, 18:43 - Arpit: Haa bhai
+09/10/2022, 18:43 - Arpit: Hm yha ghr pr rehke
+09/10/2022, 18:43 - Arpit: Pardh nhi paa rhe hai
+09/10/2022, 18:43 - Priyam Shankar Vit: Sath rhe hain sath lenge
+09/10/2022, 18:43 - Arpit: Nani ki tabiyat chlte
+09/10/2022, 18:43 - Priyam Shankar Vit: Accha
+09/10/2022, 18:43 - Arpit: Phs jaa rhe hai
+09/10/2022, 18:43 - Arpit: Isiliye ab jaa rhe
+09/10/2022, 18:43 - Arpit: Clg hi
+09/10/2022, 18:43 - Priyam Shankar Vit: Oh
+09/10/2022, 18:43 - Arpit: Wha pg me rehke
+09/10/2022, 18:43 - Arpit: Online krenge
+09/10/2022, 18:44 - Priyam Shankar Vit: Haan ghar pe ho jata hai thora
+09/10/2022, 18:44 - Arpit: Aur khud ka pardhenge
+09/10/2022, 18:44 - Priyam Shankar Vit: Sahi hai bhai
+13/10/2022, 13:49 - Priyam Shankar Vit: all the best bhai
+13/10/2022, 13:49 - Priyam Shankar Vit: kripa drishti banaye rakhna
+13/10/2022, 13:49 - Arpit: aree haa bhai ye bhi bolne wali baat hai !!
+13/10/2022, 13:51 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 13:51 - Arpit: 🤣🤣🤣
+13/10/2022, 13:52 - Arpit: Muh
+13/10/2022, 13:52 - Arpit: To dikhao apna
+13/10/2022, 13:52 - Priyam Shankar Vit: eeh hee
+13/10/2022, 13:52 - Priyam Shankar Vit: aise kaise
+13/10/2022, 13:52 - Arpit: 🤣🤣
+13/10/2022, 14:02 - Arpit: kisika mila
+13/10/2022, 14:02 - Priyam Shankar Vit: nhi
+13/10/2022, 14:02 - Priyam Shankar Vit: khud s kr rhe
+13/10/2022, 14:02 - Arpit: achha
+13/10/2022, 14:02 - Arpit: kaunsa?
+13/10/2022, 14:03 - Priyam Shankar Vit: aata h 4 chor ke baki
+13/10/2022, 14:03 - Arpit: thk hai bhejna bhai baad me aram se
+13/10/2022, 14:03 - Priyam Shankar Vit: hn jrur
+13/10/2022, 14:16 - Arpit: Bhai jaise hi ek khtm ho
+13/10/2022, 14:16 - Arpit: To photo bhejna bhai
+13/10/2022, 14:16 - Priyam Shankar Vit: ok
+13/10/2022, 14:29 - Arpit: Bhai
+13/10/2022, 14:29 - Arpit: Kchh likha
+13/10/2022, 14:29 - Arpit: <Media omitted>
+13/10/2022, 14:29 - Arpit: Hmko ye mila hai 4th ke liye
+13/10/2022, 14:29 - Arpit: Pr shi nhi lg rha bhai
+13/10/2022, 14:29 - Priyam Shankar Vit: accha dekte hn
+13/10/2022, 14:29 - Arpit: Haa bhai
+13/10/2022, 14:33 - Arpit: Bhai kchh likh liye ho to bhej do darling
+13/10/2022, 14:33 - Arpit: Pura grp latka pra hai
+13/10/2022, 14:33 - Priyam Shankar Vit: bs bhej rhe bhau
+13/10/2022, 14:33 - Priyam Shankar Vit: ek sec
+13/10/2022, 14:33 - Arpit: Ok
+13/10/2022, 14:34 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 14:34 - Arpit: 2c ek page hai ni ?
+13/10/2022, 14:34 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 14:35 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 14:35 - Priyam Shankar Vit: hn
+13/10/2022, 14:36 - Priyam Shankar Vit: bolna kisi or ko na bheje pls
+13/10/2022, 14:36 - Arpit: Zroor bhai
+13/10/2022, 14:36 - Arpit: Tension mt lo
+13/10/2022, 14:56 - Arpit: Bhai
+13/10/2022, 14:56 - Arpit: Aage kiye?
+13/10/2022, 14:56 - Priyam Shankar Vit: kr rhe
+13/10/2022, 14:56 - Arpit: Okk
+13/10/2022, 14:56 - Arpit: Bhai
+13/10/2022, 14:56 - Priyam Shankar Vit: 4th dekho n khi se
+13/10/2022, 14:57 - Arpit: Haa bhai
+13/10/2022, 14:57 - Arpit: Ek jo bheje hai
+13/10/2022, 14:57 - Arpit: Wo thk nhi lg rha
+13/10/2022, 14:57 - Priyam Shankar Vit: nhi
+13/10/2022, 14:58 - Arpit: Haa
+13/10/2022, 14:58 - Arpit: Dekhte hai
+13/10/2022, 14:58 - Arpit: Bhai
+13/10/2022, 14:58 - Arpit: Hmko bhi thk nhi lg rha
+13/10/2022, 15:02 - Arpit: Bhai time !!
+13/10/2022, 15:05 - Arpit: Bhai
+13/10/2022, 15:05 - Arpit: Bhej de ab
+13/10/2022, 15:05 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 15:06 - Arpit: Late ho jayega wrna
+13/10/2022, 15:06 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 15:06 - Arpit: 5 shi se bhej do bhai
+13/10/2022, 15:06 - Arpit: Ek baar
+13/10/2022, 15:08 - Priyam Shankar Vit: bhai kaam chalao na
+13/10/2022, 15:08 - Arpit: Okk
+13/10/2022, 15:08 - Arpit: Bhai
+13/10/2022, 15:12 - Arpit: <Media omitted>
+13/10/2022, 15:12 - Arpit: <Media omitted>
+13/10/2022, 15:12 - Arpit: Bhai ye 3 b
+13/10/2022, 15:12 - Arpit: Hai
+13/10/2022, 15:12 - Arpit: Dekh lo
+13/10/2022, 15:13 - Priyam Shankar Vit: 3 a to bheje na upr
+13/10/2022, 15:13 - Arpit: Naah naah
+13/10/2022, 15:13 - Arpit: Check krwa rha hu
+13/10/2022, 15:13 - Arpit: Shi hai ye
+13/10/2022, 15:13 - Arpit: ?
+13/10/2022, 15:13 - Priyam Shankar Vit: ye nhi ata bhai
+13/10/2022, 15:13 - Priyam Shankar Vit: isliye to a kiya
+13/10/2022, 15:14 - Arpit: 3a shi hai bilkl?
+13/10/2022, 15:14 - Priyam Shankar Vit: hn ekdm shi h
+13/10/2022, 15:14 - Arpit: Ok bhai
+13/10/2022, 15:14 - Arpit: Ye 5th pura likh de
+13/10/2022, 15:14 - Arpit: ?
+13/10/2022, 15:29 - Arpit: Bhai kchh likhe ho to bhej do bhai
+13/10/2022, 15:29 - Arpit: Phir
+13/10/2022, 15:29 - Priyam Shankar Vit: 4th whi bna diye
+13/10/2022, 15:30 - Arpit: Bhejo bhai
+13/10/2022, 15:30 - Priyam Shankar Vit: <Media omitted>
+13/10/2022, 15:30 - Arpit: Aree whi wala
+13/10/2022, 15:30 - Arpit: 😅😅
+13/10/2022, 15:30 - Arpit: Bana lo
+13/10/2022, 15:30 - Arpit: Yhi sb log banaya hai
+13/10/2022, 15:31 - Priyam Shankar Vit: hn
+13/10/2022, 15:33 - Arpit: Bhai bhaut bhaut
+13/10/2022, 15:33 - Arpit: Dhanyawad bhai
+13/10/2022, 15:34 - Arpit: Wrna fail hona tay tha aaj
+13/10/2022, 15:41 - Priyam Shankar Vit: Are
+13/10/2022, 15:41 - Priyam Shankar Vit: That's what friends do
+13/10/2022, 15:41 - Arpit: No bro
+13/10/2022, 15:42 - Arpit: Thats what brothers do
+17/10/2022, 14:53 - Arpit: Bhai
+17/10/2022, 14:53 - Arpit: 4th aur 5th ho to bhej na bhai
+17/10/2022, 14:53 - Arpit: Answer
+17/10/2022, 14:58 - Priyam Shankar Vit: nhi bnaye hn bhai
+17/10/2022, 15:08 - Arpit: Okk
+17/10/2022, 15:28 - Arpit: Bhai
+17/10/2022, 15:28 - Arpit: 5th kiye
+17/10/2022, 15:28 - Arpit: Priyam
+17/10/2022, 15:28 - Arpit: ?
+17/10/2022, 15:30 - Priyam Shankar Vit: kuch kuch likhe hn bhai
+17/10/2022, 15:30 - Arpit: Bhej do
+17/10/2022, 15:30 - Arpit: Kmse km
+17/10/2022, 15:30 - Arpit: Whi likh de bhai
+17/10/2022, 15:31 - Priyam Shankar Vit: OK
+17/10/2022, 15:31 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 13:39 - Arpit: Bhai
+19/10/2022, 13:39 - Arpit: Python ka exam hai
+19/10/2022, 13:39 - Arpit: Kchh preparation ki hai
+19/10/2022, 13:50 - Priyam Shankar Vit: Sab tumhare hawale
+19/10/2022, 13:51 - Arpit: aree bhai aise mt bolo yaar
+19/10/2022, 13:51 - Priyam Shankar Vit: Ye pehoe request accept kare tab to kuch ho
+19/10/2022, 13:51 - Arpit: achha abhi tk kiya nhi hai ?
+19/10/2022, 13:51 - Priyam Shankar Vit: Nahi
+19/10/2022, 13:51 - Arpit: ho jayega
+19/10/2022, 13:51 - Priyam Shankar Vit: Hn
+19/10/2022, 13:55 - Priyam Shankar Vit: https://tinyurl.com/mwn29f36
+19/10/2022, 13:55 - Priyam Shankar Vit: Dekhna to ye thi kya link tumhari
+19/10/2022, 13:58 - Arpit: haa bhai
+19/10/2022, 13:58 - Priyam Shankar Vit: bol na ki meri request accept karne
+19/10/2022, 13:58 - Priyam Shankar Vit: jaldi bol bhai
+19/10/2022, 13:58 - Arpit: bolta hu bhai
+19/10/2022, 13:58 - Priyam Shankar Vit: uska id de
+19/10/2022, 13:59 - Priyam Shankar Vit: me msg karta
+19/10/2022, 13:59 - Arpit: 100404
+19/10/2022, 13:59 - Arpit: pr msg kr usko
+19/10/2022, 14:00 - Priyam Shankar Vit: isko bol msg dekhne
+19/10/2022, 14:01 - Arpit: haa bhai bolta hu
+19/10/2022, 14:02 - Arpit: bhai wo bol rha hai ki already checked kr chuka hai wo
+19/10/2022, 14:02 - Arpit: tmk coe se baat krne ko bol rha hai bhai
+19/10/2022, 14:02 - Priyam Shankar Vit: ok
+19/10/2022, 14:03 - Arpit: ek baari coe se baat kro jldi bro
+19/10/2022, 14:05 - Priyam Shankar Vit: aa gaya
+19/10/2022, 14:06 - Priyam Shankar Vit: camera on nahi krna kya
+19/10/2022, 14:06 - Arpit: nhi bhai
+19/10/2022, 14:21 - Arpit: Bhai
+19/10/2022, 14:21 - Arpit: Q5 me
+19/10/2022, 14:21 - Arpit: Ek baar bhi print statement proceed nhi krega
+19/10/2022, 14:21 - Arpit: Dekho to
+19/10/2022, 14:22 - Arpit: Shi hai ye galat
+19/10/2022, 14:22 - Arpit: ?
+19/10/2022, 14:22 - Priyam Shankar Vit: bhai 5 p nhi gye hn
+19/10/2022, 14:23 - Arpit: Ek baar dekh lo bss
+19/10/2022, 14:24 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 14:24 - Arpit: Achha
+19/10/2022, 14:24 - Arpit: Okk
+19/10/2022, 14:50 - Priyam Shankar Vit: HTML, CSS, & JavaScript: A Tutorial
+
+An overview:
+
+HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript.
+CSS is used to control presentation, formatting, and layout.
+JavaScript is used to control the behavior of different elements.
+Now, let's go over each one individually to help you understand the roles each plays on a website and then we'll cover how they fit together. Let's start with good ol' HTML.
+19/10/2022, 14:50 - Priyam Shankar Vit: Q3B
+19/10/2022, 14:50 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 14:50 - Arpit: Ye pura hai na bhai
+19/10/2022, 14:50 - Arpit: Ye bhi likh de na?
+19/10/2022, 14:51 - Priyam Shankar Vit: hn question s mila mila k
+19/10/2022, 14:51 - Arpit: Okk bhai
+19/10/2022, 14:53 - Priyam Shankar Vit: isme html file khud se bana lena
+19/10/2022, 14:53 - Arpit: Haa bhai
+19/10/2022, 15:17 - Arpit: Bhai
+19/10/2022, 15:17 - Arpit: 3 ka
+19/10/2022, 15:17 - Arpit: Python se read krne wala
+19/10/2022, 15:17 - Arpit: Code bhej de apna bhai
+19/10/2022, 15:19 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 15:19 - Arpit: Thnx bhai
+19/10/2022, 15:19 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 15:22 - Priyam Shankar Vit: 5th huaa??
+19/10/2022, 15:22 - Priyam Shankar Vit: bhejo n
+19/10/2022, 15:24 - Arpit: <Media omitted>
+19/10/2022, 15:24 - Arpit: <Media omitted>
+19/10/2022, 15:24 - Arpit: Bhai
+19/10/2022, 15:24 - Arpit: 4 bhej
+19/10/2022, 15:24 - Arpit: Jldi
+19/10/2022, 15:25 - Arpit: Priyam
+19/10/2022, 15:25 - Arpit: 4 bhej bhai
+19/10/2022, 15:28 - Priyam Shankar Vit: https://www.geeksforgeeks.org/oracle-database-connection-in-python/
+19/10/2022, 15:29 - Priyam Shankar Vit: <Media omitted>
+19/10/2022, 15:29 - Priyam Shankar Vit: <Media omitted>
+20/10/2022, 18:58 - Arpit: <Media omitted>
+20/10/2022, 18:59 - Arpit: Bhai ye wala lele
+20/10/2022, 18:59 - Arpit: Routine
+20/10/2022, 18:59 - Arpit: Ye sare teachers with slot lelo
+20/10/2022, 18:59 - Arpit: Tmhara bhi bhala ho jayega
+20/10/2022, 18:59 - Arpit: Hmlog ka bhi
+20/10/2022, 19:01 - Priyam Shankar Vit: <Media omitted>
+20/10/2022, 19:01 - Priyam Shankar Vit: Bhai hmlog ye le rhe
+20/10/2022, 19:01 - Arpit: Achha chlo koi nhi bhai
+20/10/2022, 19:01 - Priyam Shankar Vit: Ek same hai
+20/10/2022, 19:02 - Arpit: Haa bhai
+24/10/2022, 10:22 - Priyam Shankar Vit: Happy diwali bhai🫂
+24/10/2022, 10:31 - Arpit: Same to u bhai
+24/10/2022, 10:31 - Arpit: Mere
+24/10/2022, 10:31 - Arpit: Tmhari family ko bhi happy diwali
+24/10/2022, 10:47 - Priyam Shankar Vit: Thankyou
+06/12/2022, 19:13 - Arpit: Congratulations mere bhai !!!
+06/12/2022, 19:13 - Priyam Shankar Vit: Thanks bhai😊
+06/12/2022, 19:14 - Arpit: ❣️💙
+25/01/2023, 10:35 - Arpit: Priyam bhai
+25/01/2023, 10:35 - Arpit: Tm sath me ho
+25/01/2023, 10:35 - Arpit: Software development wali class me
+25/01/2023, 10:40 - Priyam Shankar Vit: Haa bhai
+25/01/2023, 10:41 - Priyam Shankar Vit: Aur koi hai?
+25/01/2023, 10:41 - Arpit: sb log hai
+25/01/2023, 10:41 - Arpit: aryan Abhinav aniwesh kush
+25/01/2023, 10:41 - Arpit: sb log hai
+25/01/2023, 10:41 - Priyam Shankar Vit: Accha
+25/01/2023, 10:41 - Arpit: bhai
+25/01/2023, 10:41 - Arpit: tmhare trf se hai
+25/01/2023, 10:41 - Priyam Shankar Vit: Sahi hai
+25/01/2023, 10:42 - Arpit: shanu nilesh ya koi ?
+25/01/2023, 10:42 - Priyam Shankar Vit: Akela hun bhai
+25/01/2023, 10:42 - Arpit: chlo koi nhi bhai
+25/01/2023, 10:42 - Arpit: hmlog to hai hi
+25/01/2023, 10:42 - Priyam Shankar Vit: Hn
+25/01/2023, 10:42 - Priyam Shankar Vit: Group me jageh hai to add karlena bhai
+25/01/2023, 10:43 - Arpit: haa bhai
+25/01/2023, 10:43 - Arpit: baat krta hu  mai
+25/01/2023, 10:43 - Priyam Shankar Vit: Okk
+31/01/2023, 11:19 - Arpit: Bhai
+31/01/2023, 11:19 - Arpit: Tmko
+31/01/2023, 11:19 - Arpit: Absent kr di hai
+31/01/2023, 11:19 - Arpit: Bolo
+31/01/2023, 11:19 - Arpit: Naam pukar rhi thi tmhara wo
+31/01/2023, 11:19 - Arpit: Bhai
+31/01/2023, 11:20 - Priyam Shankar Vit: Bhai me bahar hun
+31/01/2023, 11:20 - Priyam Shankar Vit: Koi na
+31/01/2023, 11:21 - Arpit: Km se km bol do
+31/01/2023, 11:21 - Arpit: Present hu mai mam
+31/01/2023, 11:21 - Priyam Shankar Vit: Bahar hu bhai chat ke liye barely network hai
+31/01/2023, 11:22 - Arpit: Achha
+07/02/2023, 16:34 - Priyam Shankar Vit: bhai spm ka assignment ho gaya kya
+07/02/2023, 17:04 - Arpit: Nhi bhai
+07/02/2023, 17:04 - Arpit: Abhi nhi hua hai
+07/02/2023, 17:04 - Priyam Shankar Vit: are hoga to bhejna bhai pls
+07/02/2023, 17:07 - Arpit: Okk bhai
+07/02/2023, 22:09 - Priyam Shankar Vit: Hua kya bhai 😂
+07/02/2023, 22:26 - Arpit: De rha hu bhai
+07/02/2023, 22:26 - Arpit: Mang kr
+07/02/2023, 22:41 - Priyam Shankar Vit: Ok
+07/02/2023, 22:42 - Arpit: <Media omitted>
+07/02/2023, 22:42 - Arpit: Bhai isme naam wgera bdal lena bss
+07/02/2023, 22:42 - Arpit: Bhai
+07/02/2023, 22:42 - Priyam Shankar Vit: Bhai thankyou hm alag se likh lenge thankyou bhai
+07/02/2023, 22:42 - Arpit: Naah bhai
+07/02/2023, 22:43 - Priyam Shankar Vit: 🫂
+07/02/2023, 22:43 - Arpit: Word me hi submit krna hai
+07/02/2023, 22:43 - Arpit: Ye
+07/02/2023, 22:43 - Priyam Shankar Vit: Fir to aur bhi badhiya hai
+07/02/2023, 22:43 - Arpit: Tm bss naam bdl lo isms
+07/02/2023, 22:43 - Arpit: Haa
+07/02/2023, 22:43 - Arpit: Whi to
+07/02/2023, 22:43 - Priyam Shankar Vit: Okkkkk
+10/02/2023, 09:59 - Arpit: Bhai
+10/02/2023, 09:59 - Arpit: Tm wo
+10/02/2023, 09:59 - Arpit: Lions wale spreadsheet me
+10/02/2023, 09:59 - Arpit: Selected ho
+10/02/2023, 10:00 - Arpit: Tmhara reg no diya hua hai
+10/02/2023, 10:00 - Arpit: Wo kis cheez ke liye hai bhai?
+10/02/2023, 10:31 - Priyam Shankar Vit: Bhai wo immersion program me hua tha usi ka hai
+10/02/2023, 11:15 - Arpit: Bhai ye immersion program me kya hota hai
+10/02/2023, 11:15 - Arpit: Kb start hua tha ye
+10/02/2023, 11:15 - Arpit: Phirse hoga ki nhi
+10/02/2023, 11:16 - Arpit: Thoda sa mujhe guide krde bhai
+10/02/2023, 11:58 - Priyam Shankar Vit: Dedh mahina ho gaya
+10/02/2023, 11:58 - Priyam Shankar Vit: Aaj hi mail me form aaya hai
+10/02/2023, 11:58 - Priyam Shankar Vit: Kuch nahi shreeram one on one gand marta hai
+10/02/2023, 11:58 - Arpit: Bhai
+10/02/2023, 11:58 - Arpit: Konsa form aya hai
+10/02/2023, 11:58 - Arpit: Mujhe bhrna chahiye
+10/02/2023, 11:58 - Arpit: Ya nhi
+10/02/2023, 11:59 - Priyam Shankar Vit: Dekhne do
+10/02/2023, 12:08 - Priyam Shankar Vit: <Media omitted>
+10/02/2023, 12:08 - Priyam Shankar Vit: Benifit to hai
+10/02/2023, 12:08 - Arpit: bhai
+10/02/2023, 12:08 - Arpit: usme kya kya kaam krwate hai??
+10/02/2023, 12:08 - Priyam Shankar Vit: Resume wagera sahi kardeta hai
+10/02/2023, 12:09 - Arpit: aur kchh??
+10/02/2023, 12:09 - Priyam Shankar Vit: Project suggest larta hai
+10/02/2023, 12:09 - Priyam Shankar Vit: Karta*
+10/02/2023, 12:09 - Priyam Shankar Vit: Fir regular kaam karne ke liye pelta hai
+10/02/2023, 12:09 - Arpit: kaisa kaam
+10/02/2023, 12:09 - Priyam Shankar Vit: Aur last me mock interview bhi karayega
+10/02/2023, 12:09 - Priyam Shankar Vit: Leetcode cdc codechef web dev sabkuch
+10/02/2023, 12:09 - Arpit: aree bc itna headache
+10/02/2023, 12:10 - Priyam Shankar Vit: Han bhai
+10/02/2023, 12:10 - Arpit: bhai
+10/02/2023, 12:10 - Arpit: apna abhi ka resume
+10/02/2023, 12:10 - Priyam Shankar Vit: Har do week pe wapas se one on one session
+10/02/2023, 12:10 - Arpit: bhejo to
+10/02/2023, 12:10 - Priyam Shankar Vit: Han
+10/02/2023, 12:10 - Arpit: 😱😱
+10/02/2023, 12:11 - Priyam Shankar Vit: https://docs.google.com/document/d/1L03EBvg2lZwRVULVeYznvFvR1Zm1SUA3/edit?usp=sharing&ouid=103609127415883194202&rtpof=true&sd=true
+10/02/2023, 12:12 - Arpit: bhai
+10/02/2023, 12:12 - Arpit: ye whi
+10/02/2023, 12:12 - Arpit: vit format wala hai na
+10/02/2023, 12:12 - Priyam Shankar Vit: Han bhai
+10/02/2023, 12:12 - Arpit: bhai
+10/02/2023, 12:13 - Priyam Shankar Vit: Han bhai bolo
+10/02/2023, 12:13 - Arpit: ye hacker rank aur leetcode ka certificate hasil krna muskil hai kya ??
+10/02/2023, 12:13 - Priyam Shankar Vit: Leetcode ka muskil hai thora, hackerrank to kuch bhi nahi hai asan hai
+10/02/2023, 12:13 - Arpit: kaise hoga hacker rank ka??
+10/02/2023, 12:14 - Priyam Shankar Vit: Hackerrank pe jao na usme rahta hai bahut sara chij jisse mil sake certificate
+10/02/2023, 12:14 - Arpit: achha
+10/02/2023, 12:15 - Priyam Shankar Vit: Thora explore karo pata chal jayega,
+10/02/2023, 12:15 - Arpit: okk
+10/02/2023, 12:19 - Arpit: bhai
+10/02/2023, 12:19 - Arpit: meri thodi madad krde coding me
+10/02/2023, 12:20 - Arpit: iska hacker rank ka problem solving basis ka certificate mil jayega
+10/02/2023, 12:24 - Priyam Shankar Vit: Han bhai jrur
+10/02/2023, 12:24 - Priyam Shankar Vit: Pehle easy easy questions solve karo bhai
+10/02/2023, 12:24 - Priyam Shankar Vit: Fir asani hogi
+10/02/2023, 12:24 - Arpit: <Media omitted>
+10/02/2023, 12:24 - Arpit: 2 hi question hai bhai bss
+10/02/2023, 12:24 - Arpit: <Media omitted>
+10/02/2023, 12:25 - Arpit: <Media omitted>
+10/02/2023, 12:25 - Arpit: <Media omitted>
+10/02/2023, 12:27 - Priyam Shankar Vit: Bhai
+10/02/2023, 12:27 - Priyam Shankar Vit: Koi easy wala karle na
+10/02/2023, 12:27 - Priyam Shankar Vit: Ye to difficult hai
+10/02/2023, 12:27 - Arpit: haa
+10/02/2023, 12:27 - Arpit: try krta hu kchh aur
+10/02/2023, 15:34 - Arpit: Bhai
+10/02/2023, 15:34 - Arpit: 4star to hogya
+10/02/2023, 15:35 - Arpit: Problem solving mai
+10/02/2023, 15:35 - Arpit: 5star hone pr ye log certificate dedega ?
+10/02/2023, 15:47 - Priyam Shankar Vit: Karke dekho na 5 star bhi ho jayega
+10/02/2023, 15:57 - Arpit: time lag jayega bhai bjaut
+10/02/2023, 15:57 - Arpit: itna jyada points hi mang rha hai
+10/02/2023, 15:58 - Priyam Shankar Vit: Solution dekh ke karlona
+10/02/2023, 15:58 - Priyam Shankar Vit: Hackerrank 5 star to resume me bhi dalte hain log
+10/02/2023, 15:58 - Priyam Shankar Vit: Certification ki kya hi value hogi
+10/02/2023, 15:59 - Priyam Shankar Vit: Lekin iski to value hai
+10/02/2023, 16:05 - Arpit: Haa bhai
+10/02/2023, 16:05 - Arpit: Krna prega
+15/02/2023, 14:22 - Arpit: Bhai
+15/02/2023, 14:22 - Arpit: Tayar ho na
+15/02/2023, 14:22 - Arpit: ?
+15/02/2023, 14:23 - Priyam Shankar Vit: padhe to nahi hain kuch
+15/02/2023, 14:23 - Priyam Shankar Vit: lekin de denge exam kisi tarah
+15/02/2023, 14:23 - Arpit: haa bhai
+15/02/2023, 14:23 - Arpit: krlenge
+15/02/2023, 14:23 - Arpit: kchh na kchh pardha to koi bhi nhi hai
+15/02/2023, 14:23 - Priyam Shankar Vit: hn
+15/02/2023, 15:33 - Arpit: Bhai
+15/02/2023, 15:33 - Arpit: 2 aur 3
+15/02/2023, 15:38 - Priyam Shankar Vit: <Media omitted>
+15/02/2023, 15:38 - Arpit: Rhnx bhai
+15/02/2023, 15:39 - Priyam Shankar Vit: <Media omitted>
+15/02/2023, 15:39 - Arpit: Answer me yhi
+15/02/2023, 15:39 - Arpit: Chart bana de kya bss
+15/02/2023, 15:39 - Priyam Shankar Vit: different hai ye apne question se
+15/02/2023, 15:39 - Priyam Shankar Vit: han
+15/02/2023, 15:39 - Arpit: Okk
+15/02/2023, 15:40 - Priyam Shankar Vit: The formula for calculating ROI (Return on Investment) is:
+
+ROI = (Net Profit / Total Investment) * 100%
+
+Plugging in the given values, we get:
+
+ROI = (80,000 / 2,00,000) * 100%
+ROI = 0.4 * 100%
+ROI = 40%
+
+Therefore, the ROI for this 6-year project is 40%. This means that for every Rs.1 invested, the project generates Rs.0.40 in profit.
+15/02/2023, 15:40 - Priyam Shankar Vit: 2a
+15/02/2023, 15:40 - Arpit: Okk
+15/02/2023, 15:41 - Priyam Shankar Vit: <Media omitted>
+15/02/2023, 15:42 - Priyam Shankar Vit: <Media omitted>
+15/02/2023, 15:53 - Arpit: Bhai
+15/02/2023, 15:53 - Arpit: 3rd jo likhe ho wo bhej do yaar
+15/02/2023, 15:58 - Priyam Shankar Vit: 3rd konsa
+15/02/2023, 15:58 - Arpit: 3a
+15/02/2023, 16:00 - Priyam Shankar Vit: 3a
+15/02/2023, 16:00 - Priyam Shankar Vit: <Media omitted>
+15/02/2023, 16:02 - Priyam Shankar Vit: apna question hi hai isme kuch change mat karna
+15/02/2023, 16:03 - Arpit: haa bhai
+15/02/2023, 16:03 - Arpit: bss ye pura diagram bana de na
+15/02/2023, 16:03 - Priyam Shankar Vit: haan
+15/02/2023, 16:03 - Arpit: aur kcch to nhi likhna hai na?
+15/02/2023, 16:03 - Priyam Shankar Vit: nahi bhai hm bhi yahi kiye hain
+15/02/2023, 16:03 - Arpit: haa bhai
+15/02/2023, 16:03 - Arpit: ab time bhi nhi hai waise
+15/02/2023, 16:04 - Priyam Shankar Vit: hn
+16/02/2023, 14:21 - Arpit: Bhai
+16/02/2023, 14:21 - Arpit: Tera exam hai kya abhi
+16/02/2023, 14:21 - Arpit: ?
+16/02/2023, 14:24 - Priyam Shankar Vit: nahi hai bhai
+16/02/2023, 14:24 - Arpit: mera web development ka exam hai anbhi
+16/02/2023, 14:24 - Arpit: thoda dekh lena bhai
+16/02/2023, 14:25 - Arpit: abhi
+16/02/2023, 14:25 - Arpit: jo question me phasenge whi bhejenge
+16/02/2023, 14:25 - Priyam Shankar Vit: ok
+16/02/2023, 14:26 - Arpit: <Media omitted>
+16/02/2023, 14:27 - Arpit: bhai
+16/02/2023, 14:27 - Arpit: isme 3 aur 4 aur 5
+16/02/2023, 14:27 - Arpit: dekho to
+16/02/2023, 14:27 - Arpit: 4th me shayad code likhna hai
+16/02/2023, 14:28 - Arpit: to tmhara portfolio hai bhai??
+16/02/2023, 14:28 - Priyam Shankar Vit: nahi hai bhai
+16/02/2023, 14:28 - Arpit: achaa 3rd question dekho
+16/02/2023, 14:28 - Priyam Shankar Vit: 3rd to canvas hai
+16/02/2023, 14:28 - Priyam Shankar Vit: wo to nahi aata
+16/02/2023, 14:29 - Arpit: 1st??
+16/02/2023, 14:29 - Priyam Shankar Vit: dekhte hain
+16/02/2023, 14:44 - Priyam Shankar Vit: portfolio
+16/02/2023, 14:45 - Priyam Shankar Vit: <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>portfolio</title>
+</head>
+<body>
+    
+
+
+<nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+
+  
+  <section id="welcome-section" class="welcome-section">
+    <h1>Hey I am Mimic</h1>
+    <p>a web developer</p>
+  </section>
+  
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">These are some of my projects</h2>
+  
+    <div class="projects-grid">
+      <a
+        href="https://codepen.io/arpitsubhash/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/tribute.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Tribute Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/arpitsubhash/full/qRZeGZ"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/random-quote-machine.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Random Quote Machine
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/arpitsubhash/full/wgGVVX"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/calc.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          JavaScript Calculator
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/arpitsubhash/full/mVEJag"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/map.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Map Data Across the Globe
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/arpitsubhash/full/wGqEga"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/wiki.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Wikipedia Viewer
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/arpitsubhash/full/KzXQgy"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.arpitsubhash.org/testable-projects-fcc/images/tic-tac-toe.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Tic Tac Toe Game
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+  
+    <a
+      href="https://codepen.io/arpitsubhash/"
+      class="btn btn-show-all"
+      target="_blank"
+      >Show all<i class="fas fa-chevron-right"></i
+    ></a>
+  </section>
+
+  
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Let's work together...</h2>
+      <p>How do you take your coffee?</p>
+    </div>
+    <div class="contact-links">
+      <a
+        href="https://facebook.com/arpitsubhash"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-facebook-square"></i> Facebook</a
+      >
+      <a
+        id="profile-link"
+        href="https://github.com/arpitsubhash"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-github"></i> GitHub</a
+      >
+      <a
+        href="https://twitter.com/arpitsubhash"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-twitter"></i> Twitter</a
+      >
+      <a href="mailto:example@example.com" class="btn contact-details"
+        ><i class="fas fa-at"></i> Send a mail</a
+      >
+      <a href="tel:555-555-5555" class="btn contact-details"
+        ><i class="fas fa-mobile-alt"></i> Call me</a
+      >
+    </div>
+  </section>
+ 
+  
+  <footer>
+    <p>
+      All the projects and contact details given
+      
+    </p>
+    <p>
+      
+    </p>
+  </footer>
+  
+</body>
+</html>
+16/02/2023, 14:45 - Priyam Shankar Vit: html hai ye, link wagera change karlena
+16/02/2023, 14:47 - Priyam Shankar Vit: * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; 
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  
+  
+  .nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+  }
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+  
+  .welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+  }
+  
+  
+  
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+  }
+  
+  
+  
+  footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--main-gray);
+    border-top: 4px solid var(--main-red);
+  }
+  
+  footer > p {
+    margin: 2rem;
+  }
+  
+  footer i {
+    vertical-align: middle;
+  }
+16/02/2023, 14:48 - Priyam Shankar Vit: portfolio ka css
+16/02/2023, 14:48 - Arpit: ye 4th question hm krliye hai bhai
+16/02/2023, 14:49 - Arpit: 3rd aur 1st dekho na  hai
+16/02/2023, 14:49 - Arpit: bhai
+16/02/2023, 14:49 - Priyam Shankar Vit: ok
+16/02/2023, 14:59 - Priyam Shankar Vit: <!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="canvas" width="400" height="400" style="background-color:#333"></canvas>
+
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+drawClock();
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  ctx.arc(0, 0, radius, 0 , 2 * Math.PI);
+  ctx.fillStyle = "white";
+  ctx.fill();
+}
+
+//2
+
+
+function drawClock() {
+  drawFace(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.font = "30px Arial";
+ctx.fillText("vitbhpal",50,10);
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+
+  grad = ctx.createRadialGradient(0, 0 ,radius * 0.95, 0, 0, radius * 1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius * 0.15 + "px arial";
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius * 0.85);
+    ctx.rotate(-ang);
+    if(num==3 || num==12 || num==6 || num== 9){
+
+        ctx.fillText(num.toString(), 0, 0);
+    }else {
+        ctx.fillText('-', 0, 0);
+    }
+    ctx.rotate(ang);
+    ctx.translate(0, radius * 0.85);
+    ctx.rotate(-ang);
+
+    //hands
+    function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawTime(ctx, radius){
+  var now = new Date();
+  var hour = now.getHours();
+  var minute = now.getMinutes();
+  var second = now.getSeconds();
+  //hour
+  hour = hour%12;
+  hour = (hour*Math.PI/6)+(minute*Math.PI/(6*60))+(second*Math.PI/(360*60));
+  drawHand(ctx, hour, radius*0.5, radius*0.07);
+  //minute
+  minute = (minute*Math.PI/30)+(second*Math.PI/(30*60));
+  drawHand(ctx, minute, radius*0.8, radius*0.07);
+  // second
+  second = (second*Math.PI/30);
+  drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+  ctx.beginPath();
+  ctx.lineWidth = width;
+  ctx.lineCap = "round";
+  ctx.moveTo(0,0);
+  ctx.rotate(pos);
+  ctx.lineTo(0, -length);
+  ctx.stroke();
+  ctx.rotate(-pos);
+}
+  }
+}
+</script>
+
+</body>
+</html>
+16/02/2023, 14:59 - Priyam Shankar Vit: 3rd
+16/02/2023, 15:01 - Arpit: Ek dm pura chaap de isko bhai
+16/02/2023, 15:01 - Arpit: ??
+16/02/2023, 15:01 - Arpit: Shi hai ek dm ye
+16/02/2023, 15:01 - Priyam Shankar Vit: ha bhai chap do
+16/02/2023, 15:01 - Priyam Shankar Vit: isme kuch change nahi hoga
+16/02/2023, 15:01 - Arpit: Thnk u so much bhai
+16/02/2023, 15:01 - Arpit: 1aur nikal do
+16/02/2023, 15:01 - Priyam Shankar Vit: dekh rhe hain
+16/02/2023, 15:02 - Arpit: Haa bhai
+16/02/2023, 15:04 - Priyam Shankar Vit: Here are six commonly used JavaScript events and their brief descriptions:
+
+    click - This event is triggered when an element is clicked by the user. This is a common event used for buttons, links, and other interactive elements on a webpage.
+
+    submit - This event is triggered when a form is submitted, either by clicking the submit button or by pressing the enter key while a form field is active. This event can be used to validate form data or to submit data to a server.
+
+    keydown - This event is triggered when a key on the keyboard is pressed down. This event can be used to detect when a specific key is pressed and perform an action based on that key.
+
+    mouseover - This event is triggered when the user moves the mouse over an element on the webpage. This event can be used to show additional information about an element or to trigger a menu to appear.
+
+    load - This event is triggered when the webpage and all its content have finished loading. This event can be used to start an animation or to initialize a script when the page is fully loaded.
+
+    scroll - This event is triggered when the user scrolls the page up or down. This event can be used to trigger an animation or to load additional content as the user scrolls.
+
+To call a function for a JavaScript event, you need to create an event listener for that event. An event listener is a function that is called when a specific event occurs on an element.
+
+Here's an example of how to create an event listener for the click event on a button:
+16/02/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:06 - Priyam Shankar Vit: <Media omitted>
+16/02/2023, 15:06 - Priyam Shankar Vit: q5
+16/02/2023, 15:09 - Arpit: ha abhai
+16/02/2023, 16:12 - Arpit: bhai thank u so much bhai
+16/02/2023, 16:12 - Arpit: 3rd wala to koi kiya hi nhi
+16/02/2023, 16:12 - Arpit: jo tm heje
+16/02/2023, 16:12 - Arpit: bheje
+16/02/2023, 16:21 - Priyam Shankar Vit: are koi nahi bhai
+20/02/2023, 11:03 - Arpit: Bhai
+20/02/2023, 11:03 - Arpit: Quiz ke answers ka ss bhej dena bhai
+20/02/2023, 11:04 - Arpit: Mere ghr me shadi hai
+20/02/2023, 11:04 - Arpit: Thora kaam krwa rha hu
+20/02/2023, 11:07 - Arpit: Priyam bhai
+20/02/2023, 11:07 - Arpit: Msgs dekh lo yaar
+20/02/2023, 11:49 - Priyam Shankar Vit: Nani ke ghar pr hain
+20/02/2023, 11:49 - Priyam Shankar Vit: Raaste me hain laut rhe hn
+23/02/2023, 21:16 - Priyam Shankar Vit: assignment hua kya bhai
+23/02/2023, 21:20 - Arpit: Nhi bhai
+23/02/2023, 21:20 - Arpit: Mangta hu
+23/02/2023, 21:21 - Priyam Shankar Vit: Thankyou bhai
+23/02/2023, 23:02 - Priyam Shankar Vit: <Media omitted>
+06/03/2023, 23:18 - Priyam Shankar Vit: Add karo bhai
+11/03/2023, 08:31 - Arpit: <Media omitted>
+11/03/2023, 08:31 - Arpit: Priyam bhai
+11/03/2023, 08:31 - Arpit: Isme
+11/03/2023, 08:31 - Arpit: Kya krna hai smjh nhi aa rha hai
+11/03/2023, 08:31 - Arpit: ?
+11/03/2023, 10:18 - Priyam Shankar Vit: Isme kuch nahi karna hai
+11/03/2023, 10:18 - Priyam Shankar Vit: Jiska 160 credit ho gaya hai usko vharna hai
+11/03/2023, 10:24 - Arpit: Mera nhi hua hai
+11/03/2023, 10:24 - Arpit: Bhai
+11/03/2023, 10:24 - Arpit: Hm form bhre hai
+11/03/2023, 10:24 - Arpit: Pr
+11/03/2023, 10:24 - Arpit: No kr diye hai credits wale section me
+11/03/2023, 10:24 - Priyam Shankar Vit: Nahi bharna tha
+11/03/2023, 10:25 - Arpit: Aree mera coursera nhi hua hai
+11/03/2023, 10:25 - Arpit: Usme pucha tha
+11/03/2023, 10:25 - Arpit: Ki final year project ke alawa
+11/03/2023, 10:25 - Arpit: Credits to nhi reh rha hai na
+11/03/2023, 10:25 - Arpit: Tb usme no kr diya mai
+11/03/2023, 10:26 - Arpit: Kyuki reh to rha hi hai
+11/03/2023, 10:26 - Priyam Shankar Vit: Iska mtlb hai ki wo puch rha ki 160 credit hue hain ya nahi
+11/03/2023, 10:26 - Arpit: To usme no
+11/03/2023, 10:26 - Arpit: Kr diya maine
+11/03/2023, 10:26 - Arpit: Galat
+11/03/2023, 10:26 - Arpit: Ho gya kya bhai
+11/03/2023, 10:26 - Arpit: ?
+11/03/2023, 10:26 - Priyam Shankar Vit: Nahi theek hai
+15/03/2023, 10:47 - Arpit: bhai
+15/03/2023, 10:47 - Arpit: kaha do
+15/03/2023, 10:47 - Arpit: class me nhi ho tm
+17/03/2023, 14:10 - Arpit: <Media omitted>
+17/03/2023, 14:10 - Arpit: bhai isme bss 5th me madad kr do bhai
+17/03/2023, 14:20 - Priyam Shankar Vit: dekhte hain bhai
+17/03/2023, 14:22 - Priyam Shankar Vit: bhai php to nahi aata hai
+17/03/2023, 14:25 - Arpit: q3 me dekho
+17/03/2023, 14:25 - Arpit: bhai
+17/03/2023, 14:31 - Arpit: bhai
+17/03/2023, 14:31 - Arpit: mila 3 me kchh
+17/03/2023, 14:32 - Priyam Shankar Vit: dekhte hain bhai
+17/03/2023, 14:32 - Priyam Shankar Vit: php nahi aati dhund rhe hain
+17/03/2023, 14:42 - Priyam Shankar Vit: To create a web application that allows real-time search results, we can use AJAX (Asynchronous JavaScript and XML) to send requests to the server without refreshing the page. We can also use jQuery to make the process easier and more efficient.
+17/03/2023, 14:43 - Priyam Shankar Vit: ye gpt ka answer hai sahi lag rha hai
+17/03/2023, 14:45 - Priyam Shankar Vit: <!DOCTYPE html>
+<html>
+<title>ajax and jquery</title>
+<head>
+</head>
+<body>
+    <form>
+  <input type="text" id="search-input" placeholder="Search for products...">
+  <button type="submit">Search</button>
+</form>
+</body>
+</html>
+17/03/2023, 14:45 - Priyam Shankar Vit: jQuery: Add an event listener to the search input field to trigger a function that sends an AJAX request to the server with the user's input.
+17/03/2023, 14:46 - Priyam Shankar Vit: $(document).ready(function() {
+  $('#search-input').on('input', function() {
+    var searchQuery = $(this).val();
+    $.ajax({
+      url: '/search',
+      type: 'GET',
+      data: { query: searchQuery },
+      success: function(data) {
+      }
+    });
+  });
+});
+17/03/2023, 14:46 - Priyam Shankar Vit: Server-Side: On the server-side, create a route that handles the AJAX request and returns the search results.
+17/03/2023, 14:46 - Priyam Shankar Vit: app.get('/search', function(req, res) {
+  var searchQuery = req.query.query;
+  // Query database for search results
+  // Return results as JSON
+  res.json(results);
+});
+17/03/2023, 14:46 - Priyam Shankar Vit: Best Practices: To ensure that the application is responsive and efficient, we can follow these best practices:
+
+    Use debouncing or throttling to prevent excessive requests and improve performance.
+    Use caching to store frequently searched items to reduce server load.
+    Optimize database queries and use indexing to improve search performance.
+    Use a loading spinner or progress bar to indicate that search results are being fetched.
+    Use responsive design to ensure that the search input field and results are displayed correctly on different devices.
+    Use error handling to handle failed requests and display appropriate error messages to the user.
+17/03/2023, 14:46 - Priyam Shankar Vit: ye sb q3 b ka hai
+17/03/2023, 14:48 - Arpit: Achha
+17/03/2023, 14:48 - Arpit: Shi hai ye bhai
+17/03/2023, 14:48 - Arpit: ?
+17/03/2023, 14:48 - Priyam Shankar Vit: han bhai sahi lag raha hai
+17/03/2023, 14:48 - Arpit: Okk
+17/03/2023, 14:48 - Priyam Shankar Vit: agar kahi na mile to hi ye likhna
+17/03/2023, 14:48 - Arpit: Okk
+17/03/2023, 14:48 - Priyam Shankar Vit: ye bhi 90% sahi hai
+17/03/2023, 14:49 - Priyam Shankar Vit: 5th bhi nahi aata bhai sorry
+17/03/2023, 14:49 - Priyam Shankar Vit: gpt se hi likh lena
+17/03/2023, 14:50 - Priyam Shankar Vit: To use PHP functions for validating data in a web application, you can follow the following steps:
+
+    Sanitize and validate all incoming user data: This includes data from forms, cookies, and other sources. Sanitization involves removing any unwanted characters or tags from the input data. Validation involves ensuring that the input data matches the expected format and type.
+
+    Use PHP built-in functions for validation: PHP has several built-in functions that you can use for validating data. These include filter_var(), preg_match(), ctype_digit(), is_numeric(), and many others. For example, filter_var() can be used to validate email addresses, URLs, and other input data formats.
+
+    Use custom validation functions: In addition to built-in functions, you can also create custom validation functions to meet specific requirements of your application. Custom functions can be more flexible and powerful than built-in functions.
+
+    Use prepared statements and parameterized queries: When processing data that will be used in SQL queries, you should use prepared statements and parameterized queries to prevent SQL injection attacks.
+
+    Escape output data: Whenever you output data to the user, ensure that it is properly escaped to prevent XSS (cross-site scripting) attacks. You can use functions such as htmlspecialchars() and htmlentities() to escape output data.
+
+    Keep your PHP version updated: Make sure you are using the latest stable version of PHP and keep it updated to ensure that any security vulnerabilities are addressed.
+
+    Use a security-focused coding style: Use best practices such as avoiding global variables, limiting file system access, and using secure coding patterns.
+17/03/2023, 14:51 - Priyam Shankar Vit: <?php
+// Validate email address
+$email = $_POST['email'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    echo "Invalid email format";
+}
+
+// Validate numeric input
+$age = $_POST['age'];
+if (!ctype_digit($age)) {
+    echo "Age must be a number";
+}
+
+// Custom validation function
+function validatePhoneNumber($phoneNumber) {
+    // Use regular expression to validate phone number format
+    $pattern = '/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/';
+    if (!preg_match($pattern, $phoneNumber)) {
+        return false;
+    }
+    return true;
+}
+
+$phone = $_POST['phone'];
+if (!validatePhoneNumber($phone)) {
+    echo "Invalid phone number format";
+}
+
+// Use prepared statements and parameterized queries to prevent SQL injection
+$stmt = $pdo->prepare("SELECT * FROM users WHERE username = ?");
+$username = $_POST['username'];
+$stmt->execute([$username]);
+$user = $stmt->fetch();
+
+// Escape output data to prevent XSS attacks
+echo "Welcome " . htmlspecialchars($user['username']) . "!";
+?>
+17/03/2023, 14:52 - Priyam Shankar Vit: 5th
+17/03/2023, 14:52 - Priyam Shankar Vit: 5th ke code ka example
+17/03/2023, 14:53 - Priyam Shankar Vit: ye bhi sahi lag rha hai
+17/03/2023, 14:55 - Arpit: Okk hai
+17/03/2023, 14:55 - Arpit: Bhai
+17/03/2023, 17:32 - Arpit: Bhai
+17/03/2023, 17:32 - Arpit: Kb jaa rhe ho clg
+17/03/2023, 17:32 - Arpit: ?
+17/03/2023, 17:51 - Priyam Shankar Vit: 26 ko pahucheñge bhai
+17/03/2023, 17:53 - Arpit: Okk bhai
+20/03/2023, 17:24 - Arpit: Bhai
+20/03/2023, 17:24 - Arpit: Mock registration kiye ho?
+20/03/2023, 17:25 - Priyam Shankar Vit: Mera 5.40 hai
+20/03/2023, 17:26 - Arpit: Achha
+20/03/2023, 17:26 - Arpit: Bhai
+20/03/2023, 17:27 - Priyam Shankar Vit: Kaisa hai tumhara time table bhejna
+20/03/2023, 17:27 - Arpit: Hm nhi kiye hai tbhi tk
+20/03/2023, 17:27 - Arpit: Mera bhi
+20/03/2023, 17:27 - Priyam Shankar Vit: Ok
+20/03/2023, 17:27 - Arpit: 5.40 me hai
+20/03/2023, 17:27 - Priyam Shankar Vit: Accha
+20/03/2023, 17:29 - Arpit: Bhai
+20/03/2023, 17:29 - Arpit: Sham me loge ne
+20/03/2023, 17:29 - Arpit: ?
+20/03/2023, 17:29 - Arpit: Ya subh me
+20/03/2023, 17:29 - Priyam Shankar Vit: Lagataar jab mil jaye tab lenge
+20/03/2023, 17:30 - Priyam Shankar Vit: Priority sham wali hi hai
+20/03/2023, 17:30 - Arpit: Achha bhai
+20/03/2023, 17:30 - Priyam Shankar Vit: Han
+20/03/2023, 17:30 - Arpit: Mera bhi
+20/03/2023, 17:30 - Arpit: Chlo phir sath me krenge
+20/03/2023, 17:30 - Arpit: Aur kya
+20/03/2023, 17:30 - Priyam Shankar Vit: Han bhai
+20/03/2023, 17:45 - Priyam Shankar Vit: <Media omitted>
+21/03/2023, 13:50 - Priyam Shankar Vit: bhai meeting me aa gaye kya
+21/03/2023, 13:50 - Arpit: Nhi bhai
+21/03/2023, 13:50 - Arpit: Pata nhi kya chutiyap hai
+21/03/2023, 13:50 - Arpit: <Media omitted>
+21/03/2023, 13:50 - Arpit: Tbse yhi dikha rha hai
+21/03/2023, 13:50 - Priyam Shankar Vit: har baar ka hai
+21/03/2023, 13:50 - Arpit: 3 baar try krliye
+21/03/2023, 13:51 - Priyam Shankar Vit: han
+21/03/2023, 13:51 - Arpit: Aisa na gandu gandu teacher mil jata hai baar baar
+21/03/2023, 13:51 - Arpit: Paper ayega
+21/03/2023, 13:51 - Arpit: Likhna chalu krdenge
+21/03/2023, 13:52 - Priyam Shankar Vit: han bhai rukenge kyu
+21/03/2023, 13:52 - Arpit: Haa
+21/03/2023, 13:52 - Priyam Shankar Vit: likhne lagenge aram se
+21/03/2023, 13:52 - Arpit: Bhai
+21/03/2023, 13:52 - Arpit: Khana kha rha hai wo
+21/03/2023, 13:52 - Arpit: Mic cam on krke
+21/03/2023, 13:52 - Arpit: Aryan add hua pra hai
+21/03/2023, 13:52 - Arpit: Usme
+21/03/2023, 13:52 - Priyam Shankar Vit: khane do
+21/03/2023, 13:53 - Arpit: 🤣🤣🤣
+21/03/2023, 13:53 - Priyam Shankar Vit: khatam hote hi add karega
+21/03/2023, 14:18 - Arpit: bhai
+21/03/2023, 14:18 - Arpit: kchh bana
+21/03/2023, 14:18 - Arpit: ??
+21/03/2023, 14:18 - Priyam Shankar Vit: bna rhe hn
+21/03/2023, 14:18 - Arpit: okk bhai
+21/03/2023, 14:28 - Arpit: bhai
+21/03/2023, 14:28 - Arpit: 3rd ya 2nd kiye kya
+21/03/2023, 14:29 - Priyam Shankar Vit: 2nd kr liye
+21/03/2023, 14:29 - Arpit: bhejo bhai
+21/03/2023, 14:29 - Priyam Shankar Vit: ruko
+21/03/2023, 14:29 - Arpit: hm
+21/03/2023, 14:33 - Priyam Shankar Vit: <Media omitted>
+21/03/2023, 14:33 - Priyam Shankar Vit: <Media omitted>
+21/03/2023, 14:33 - Priyam Shankar Vit: <Media omitted>
+21/03/2023, 14:57 - Arpit: bhai
+21/03/2023, 14:57 - Arpit: 3rd banaye ho
+21/03/2023, 15:05 - Priyam Shankar Vit: <Media omitted>
+21/03/2023, 15:05 - Priyam Shankar Vit: pg 555
+21/03/2023, 15:05 - Priyam Shankar Vit: 3rd
+21/03/2023, 15:16 - Arpit: Bhai
+21/03/2023, 15:16 - Arpit: Imse to
+21/03/2023, 15:16 - Arpit: 555 page hi nhi hai
+21/03/2023, 15:18 - Arpit: Bhai nhi mil rha hai
+21/03/2023, 15:18 - Arpit: Tm photo bhej dena
+21/03/2023, 15:18 - Arpit: Whi likh denge
+21/03/2023, 15:20 - Priyam Shankar Vit: utna time nahi hai bhai
+21/03/2023, 15:20 - Priyam Shankar Vit: mera 2 bahca hai
+21/03/2023, 15:20 - Arpit: achha page no. shi bata do bhai
+21/03/2023, 15:20 - Priyam Shankar Vit: 555
+21/03/2023, 15:21 - Priyam Shankar Vit: se 560 jitna topic hai sabka brief
+21/03/2023, 15:21 - Arpit: achha smjh gya bhai
